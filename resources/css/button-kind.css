@@ -1,0 +1,17 @@
+.passed-button-kind {
+    width: 90px;
+    height: 90px;
+    background-color: #10b981;
+    color: white;
+    font-size: 42px;
+    font-weight: 300;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 10px 25px -5px rgb(16 185 129 / 0.4);
+    margin: 0 auto;
+}
