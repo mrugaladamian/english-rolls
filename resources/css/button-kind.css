@@ -1,17 +1,13 @@
+button {
+    user-select: none;
+}
+
 .passed-button-kind {
-    width: 90px;
-    height: 90px;
-    background-color: #10b981;
-    color: white;
-    font-size: 42px;
-    font-weight: 300;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.25s ease;
+    @apply w-[90px] h-[90px] bg-emerald-500 text-white text-[42px]
+           font-light border-0 rounded-full flex items-center justify-center
+           cursor-pointer fixed bottom-[50px] left-1/2 -translate-x-1/2
+           z-[1000] m-0;
+
     box-shadow: 0 10px 25px -5px rgb(16 185 129 / 0.4);
-    margin: 0 auto;
+    transition: all 0.25s ease;
 }

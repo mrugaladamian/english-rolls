@@ -1,26 +1,17 @@
 @extends('layouts.rolls')
 @section('title', 'Rolls')
 @section('content')
-<div class="text-center" 
-     x-data="{ showEnglish: false, rolls: [] }" 
-     x-init="initializeRolls()"
-     x-effect="rolls = this.rolls || []">
-
-    <div @click="showEnglish = true" class="cursor-pointer" x-show="!showEnglish">
-        <h1 id="rolls-pl-text" class="text-3xl font-medium" 
-            x-text="rolls[0]?.polish || 'Brak słowa'">
-        </h1>
+    <div x-data="window.Rolls()">
+        <img class="speak-image-kind" :src="loudspeakerIcon" alt="speak" @click="isSpeak = !isSpeak"
+            :class="isSpeak ? 'opacity-100' : 'opacity-20'">
+        <div class="text-center h-[calc(100vh-28vh)]" x-show="isPlContent" @click.stop="rollPlContentClick()">
+            <h1 x-text="rolls[0].pl"></h1>
+        </div>
+        <div class="text-center h-[calc(100vh-28vh)]" x-show="!isPlContent" @click.stop="nextRoll()">
+            <h1 x-text="rolls[0].en"></h1>
+            <h2 x-text="rolls[0].phonetic"></h2>
+            <button class="passed-button-kind" @click.stop="passedRoll()">✓</button>
+        </div>
+        <h3 class="rolls-length-text-kind" x-text="rolls.length" @click.stop="rollsLengthTextClick()"></h3>
     </div>
-
-    <div x-show="showEnglish" @click="showEnglish = false">
-        <h2 id="rolls-en-text" class="text-3xl font-medium" 
-            x-text="rolls[0]?.english || 'Word in English'"></h2>
-        <h3 id="rolls-phonetic-text" class="text-xl mb-10" 
-            x-text="rolls[0]?.phonetic || '/wymowa/'"></h3>
-
-        <button @click="window.passedButton()" class="passed-button-kind">
-            ✓
-        </button>
-    </div>
-</div>
 @endsection
