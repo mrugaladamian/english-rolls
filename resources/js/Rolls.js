@@ -9,7 +9,7 @@ window.Rolls = function () {
         rolls: {},
 
         init() {
-            this.rolls = this._getRollsFromLocalStorage();                        
+            this.rolls = this._getRollsFromLocalStorage();
         },
 
         nextRoll() {
@@ -49,6 +49,15 @@ window.Rolls = function () {
             this.init();
         },
 
+        speakCurrentRollEn() {
+            const text = this.rolls[0]?.en?.trim();
+            responsiveVoice.speak(text, "US English Female", {
+                rate: 0.8,
+                pitch: 1,
+                volume: 1
+            });
+        },
+
         _setLocalStorageRolls() {
             const rollsJson = JSON.stringify(this.rolls);
             localStorage.setItem(ROLLS_JSON_KEY, rollsJson);
@@ -74,15 +83,5 @@ window.Rolls = function () {
             return JSON.stringify(rolls);
         },
 
-        speakCurrentRollEn() {
-            const text = this.rolls[0]?.en?.trim();
-            if (!text) return;
-
-            responsiveVoice.speak(text, "US English Female", {
-                rate: 0.8,
-                pitch: 1,
-                volume: 1
-            });
-        },
     };
 };
