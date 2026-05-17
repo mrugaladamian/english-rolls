@@ -1,64 +1,3 @@
-export const ROLL_LEVEL_MAX = 3;
-export const ROLLS_JSON_KEY = 'rolls';
-export const INITIAL_ROLLS = [
-    {
-        id: 1,
-        pl: "porzucić",
-        en: "abandon",
-        phonetic: "a-BAN-den",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2,
-        pl: "porzucony",
-        en: "abandoned",
-        phonetic: "a-BAN-dend",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 3,
-        pl: "zdolność",
-        en: "ability",
-        phonetic: "a-BI-li-ti",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 4,
-        pl: "zdolny",
-        en: "able",
-        phonetic: "EJ-bl",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 5,
-        pl: "o / około",
-        en: "about",
-        phonetic: "a-BAUT",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 6,
-        pl: "powyżej",
-        en: "above",
-        phonetic: "a-BAW",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 7,
-        pl: "za granicą",
-        en: "abroad",
-        phonetic: "a-BROD",
-        level: ROLL_LEVEL_MAX
-    },
-];
-
-// To są wszystkie słówka po angielsku: wykorzystaj je i utwórz nowe export const INITIAL_ROLLS
-// jeśli jakieś znaczenie nie jest dość sensowne to zmodyfikuj je lub po prostu pomiń.
-// Aktualny INITIAL_ROLLS to tylko przykład. Zwróć uwagę na wymowę - jest pisana po polsku, bez 
-// znaków słownikowych i są sylabowane myślnikami z wielkimi literami tam gdzie jest akcent.
-// Utwórz nowy export const INITIAL_ROLLS z tymi poniższymi słowkami. Do dzieła! 
-// Zwróć mi to jako plik (a nie kod do skopiowania!)
-
 abandon
 abandoned
 ability
@@ -3902,4 +3841,3 @@ yourself
 youth
 zero
 zone
-=== end ==
