@@ -1,0 +1,45 @@
+button {
+    user-select: none;
+}
+
+h1 {
+    font-size: 26px;
+    user-select: none;
+}
+
+h2 {
+    font-size: 18px;
+    user-select: none;
+}
+
+h3 {
+    user-select: none;
+}
+
+.passed-button-kind {
+    @apply w-[90px] h-[90px] bg-emerald-500 text-white text-[42px]
+           font-light border-0 rounded-full flex items-center justify-center
+           cursor-pointer fixed bottom-[50px] left-1/2 -translate-x-1/2
+           z-[1000] m-0;
+
+    box-shadow: 0 10px 25px -5px rgb(16 185 129 / 0.4);
+    transition: all 0.25s ease;
+}
+
+.speak-image-kind {
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.2s ease;           
+}
+
+.rolls-length-text-kind {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
