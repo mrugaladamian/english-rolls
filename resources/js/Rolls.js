@@ -1,54 +1,53 @@
 import { ROLLS_JSON_KEY, INITIAL_ROLLS, ROLL_LEVEL_MAX, RESET_ROLLS_LEVEL } from './constants.js';
 import { shuffle } from './utils.js';
-
 window.Rolls = function () {
     return {
         isPlContent: true,
         isSpeak: true,
         resetRollsLevel: 0,
         rolls: {},
-
+        backgroundVideoUrl: null,
         init() {
             this.rolls = this._getRollsFromLocalStorage();
         },
-
         nextRoll() {
             this.isPlContent = true;
             this.rolls[0].level = 0;
             this.rolls.push(this.rolls.shift());
             this._setLocalStorageRolls();
         },
-
         passedRoll() {
             this.isPlContent = true;
             this.rolls[0].level++;
             this._advanceRoll();
             this._setLocalStorageRolls();
         },
-
         trySpeakCurrentRollEn() {
-            if (this.isSpeak) {
+            if (this._isSpeakEnabled()) {
                 this.speakCurrentRollEn();
             }
         },
-
         rollPlContentClick() {
             this.resetRollsLevel = 0;
             this.isPlContent = false;
             this.trySpeakCurrentRollEn();
         },
-
         rollsLengthTextClick() {
-            if (this.resetRollsLevel++ === RESET_ROLLS_LEVEL) {
+            if (this._shouldResetRolls()) {
                 this.resetRolls();
             }
         },
-
+        loadBackgroundVideo(event) {
+            const file = event.target.files?.[0];
+            const video = document.getElementById('bgVideo');
+            if (this._canLoadBackgroundVideo(file, video)) {
+                this._loadSelectedBackgroundVideo(file, video, event);
+            }
+        },
         resetRolls() {
             localStorage.removeItem(ROLLS_JSON_KEY);
             this.init();
         },
-
         speakCurrentRollEn() {
             const text = this.rolls[0]?.en?.trim();
             responsiveVoice.speak(text, "US English Female", {
@@ -57,31 +56,72 @@ window.Rolls = function () {
                 volume: 1
             });
         },
-
+        _isSpeakEnabled() {
+            return this.isSpeak;
+        },
+        _shouldResetRolls() {
+            const shouldResetRolls = this.resetRollsLevel++ === RESET_ROLLS_LEVEL;
+            return shouldResetRolls;
+        },
+        _canLoadBackgroundVideo(file, video) {
+            const canLoadBackgroundVideo = file && video;
+            return canLoadBackgroundVideo;
+        },
+        _loadSelectedBackgroundVideo(file, video, event) {
+            this._revokeBackgroundVideoUrl();
+            this._setBackgroundVideoUrl(file);
+            this._setBackgroundVideo(video);
+            this._resetVideoInput(event);
+        },
+        _revokeBackgroundVideoUrl() {
+            if (this._hasBackgroundVideoUrl()) {
+                URL.revokeObjectURL(this.backgroundVideoUrl);
+            }
+        },
+        _hasBackgroundVideoUrl() {
+            return this.backgroundVideoUrl;
+        },
+        _setBackgroundVideoUrl(file) {
+            this.backgroundVideoUrl = URL.createObjectURL(file);
+        },
+        _setBackgroundVideo(video) {
+            video.src = this.backgroundVideoUrl;
+            video.volume = 0.4;
+            video.load();
+            video.play().catch(() => {});
+        },
+        _resetVideoInput(event) {
+            event.target.value = '';
+        },
         _setLocalStorageRolls() {
             const rollsJson = JSON.stringify(this.rolls);
             localStorage.setItem(ROLLS_JSON_KEY, rollsJson);
         },
-
         _advanceRoll() {
-            if (this.rolls[0].level >= ROLL_LEVEL_MAX) {
-                this.rolls.shift()
+            if (this._isCurrentRollPassed()) {
+                this._removeCurrentRoll();
             } else {
-                this.rolls.push(this.rolls.shift());
+                this._moveCurrentRollToEnd();
             }
         },
-
+        _isCurrentRollPassed() {
+            const isCurrentRollPassed = this.rolls[0].level >= ROLL_LEVEL_MAX;
+            return isCurrentRollPassed;
+        },
+        _removeCurrentRoll() {
+            this.rolls.shift();
+        },
+        _moveCurrentRollToEnd() {
+            this.rolls.push(this.rolls.shift());
+        },
         _getRollsFromLocalStorage() {
             const rollsJson = localStorage.getItem(ROLLS_JSON_KEY) ?? this._getStartRollsJson();
             const rolls = JSON.parse(rollsJson);
             return rolls;
         },
-
         _getStartRollsJson() {
-            console.log('_getStartRollsJson()');
             const rolls = shuffle(INITIAL_ROLLS);
             return JSON.stringify(rolls);
-        },
-
+        }
     };
 };

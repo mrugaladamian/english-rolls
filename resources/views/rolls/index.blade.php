@@ -2,14 +2,22 @@
 @section('title', 'Rolls')
 @section('content')
     <div x-data="window.Rolls()">
-        <img class="speak-image-kind" :src="loudspeakerIcon" alt="speak" @click="isSpeak = !isSpeak"
-            :class="isSpeak ? 'opacity-100' : 'opacity-20'">
-        <div class="text-center h-[calc(100vh-28vh)]" x-show="isPlContent" @click.stop="rollPlContentClick()">
-            <h1 x-text="rolls[0].pl"></h1>
+        <div class="rolls-icons">
+            <img class="option-icon" :src="loudspeakerIcon" alt="speak" @click="isSpeak = !isSpeak"
+                :class="isSpeak ? 'opacity-100' : 'opacity-20'">
+            <img class="option-icon" :src="filmIcon" alt="film" @click="$refs.videoInput.click()">
+            <input class="hidden" type="file" accept="video/*" x-ref="videoInput" @change="loadBackgroundVideo($event)">
         </div>
-        <div class="text-center h-[calc(100vh-28vh)]" x-show="!isPlContent" @click.stop="nextRoll()">
-            <h1 x-text="rolls[0].en"></h1>
-            <h2 x-text="rolls[0].phonetic"></h2>
+        <div class="fixed inset-0 z-10" x-show="isPlContent" @click.stop="rollPlContentClick()">
+            <div class="absolute left-0 top-[24vh] w-screen px-6 text-center">
+                <h1 x-text="rolls[0].pl"></h1>
+            </div>
+        </div>
+        <div class="fixed inset-0 z-10" x-show="!isPlContent" @click.stop="nextRoll()">
+            <div class="absolute left-0 top-[24vh] w-screen px-6 text-center">
+                <h1 x-text="rolls[0].en"></h1>
+                <h2 x-text="rolls[0].phonetic"></h2>
+            </div>
             <button class="passed-button-kind" @click.stop="passedRoll()">✓</button>
         </div>
         <h3 class="rolls-length-text-kind" x-text="rolls.length" @click.stop="rollsLengthTextClick()"></h3>

@@ -11,6 +11,7 @@
 </head>
 
 <body class="min-h-screen flex items-start justify-center pt-[28vh]">
+    <video id="bgVideo" loop autoplay playsinline preload="auto"></video>
     <div class="w-full max-w-lg mx-auto px-6">
         @yield('content')
     </div>

@@ -2,18 +2,44 @@ button {
     user-select: none;
 }
 
+body {
+    background: black;
+}
+
 h1 {
     font-size: 26px;
+    letter-spacing: 0.04em;    
     user-select: none;
 }
 
 h2 {
     font-size: 18px;
+    letter-spacing: 0.04em;    
     user-select: none;
 }
 
 h3 {
+    letter-spacing: 0.04em;    
     user-select: none;
+}
+
+h1,
+h2,
+h3 {
+    color: white;
+    text-shadow: 0 0 3px black, 0 0 8px black;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 0;
+    height: 100vh;
+    width: auto;
+    max-width: none;
+    transform: translateX(-50%);
+    pointer-events: none;
 }
 
 .passed-button-kind {
@@ -26,14 +52,20 @@ h3 {
     transition: all 0.25s ease;
 }
 
-.speak-image-kind {
-    height: 30px;
-    width: 30px;
+.rolls-icons {
+    display: flex;
+    gap: 12px;
     position: fixed;
     top: 20px;
     left: 20px;
     z-index: 1000;
+}
+
+.option-icon {
+    height: 30px;
+    width: 30px;
     cursor: pointer;
+    filter: invert(1);
     transition: transform 0.2s ease;           
 }
 
