@@ -29,6 +29,10 @@ English Rolls works like a minimal flashcard experience. The user starts with a 
 
 The user-facing instructions are available in [docs/usage.md](docs/usage.md).
 
+## AI Collaboration
+
+Guidelines for working with AI assistants on this project are available in [docs/ai.md](docs/ai.md).
+
 ## Live Demo
 
 The production version is available at [english-rolls.onrender.com](https://english-rolls.onrender.com/).
@@ -40,6 +44,7 @@ The production version is available at [english-rolls.onrender.com](https://engl
 - `resources/css` - application styles
 - `resources/js` - frontend behavior
 - `resources/data` - vocabulary source files
+- `docs/ai.md` - AI collaboration and code style guidelines
 - `docs/usage.md` - user guide
 - `render.yaml` - Render deployment configuration
 
