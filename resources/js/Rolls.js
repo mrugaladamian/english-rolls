@@ -20,6 +20,7 @@ window.Rolls = function () {
         swipeStartPosition: null,
         rolls: {},
         backgroundVideoUrl: null,
+        isVideoJumpVisible: false,
         videoJumpText: '',
         videoJumpTimeout: null,
         init() {
@@ -138,9 +139,10 @@ window.Rolls = function () {
         },
         _showVideoJump(videoJumpText) {
             this.videoJumpText = videoJumpText;
+            this.isVideoJumpVisible = true;
             clearTimeout(this.videoJumpTimeout);
             this.videoJumpTimeout = setTimeout(() => {
-                this.videoJumpText = '';
+                this.isVideoJumpVisible = false;
             }, VIDEO_JUMP_MESSAGE_TIMEOUT);
         },
         _getSwipeDirectionSign(swipePosition) {
