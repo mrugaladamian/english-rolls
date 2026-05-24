@@ -18,6 +18,7 @@ alias a="git add ."
 alias add=a
 alias c="git commit -m"
 alias commit=c
-alias backup="./codeplatform/tools/bin/backup.sh"
+alias backup="./codeplatform/tools/bin/backup"
+alias backup-list="./codeplatform/tools/bin/backup-list"
 
 chmod +x codeplatform/tools/bin/*
