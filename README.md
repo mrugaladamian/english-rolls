@@ -45,6 +45,12 @@ The production version is available at [english-rolls.onrender.com](https://engl
 
 ## Local Setup
 
+At the beginning of a development session, load the project helper aliases and tool permissions:
+
+```bash
+source dev-env.sh
+```
+
 ```bash
 composer install
 npm install
