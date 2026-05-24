@@ -4,6 +4,7 @@ window.Rolls = function () {
     return {
         isPlContent: true,
         isSpeak: true,
+        isVideo: false,
         resetRollsLevel: 0,
         swipeStartPosition: null,
         rolls: {},
@@ -51,6 +52,13 @@ window.Rolls = function () {
                 this.resetRolls();
             }
         },
+        videoIconClick(videoInput, video) {
+            if (this._isVideoEnabled()) {
+                this._removeBackgroundVideo(video);
+            } else {
+                videoInput.click();
+            }
+        },
         loadBackgroundVideo(event, video) {
             const file = event.target.files?.[0];
             if (this._canLoadBackgroundVideo(file, video)) {
@@ -71,6 +79,9 @@ window.Rolls = function () {
         },
         _isSpeakEnabled() {
             return this.isSpeak;
+        },
+        _isVideoEnabled() {
+            return this.isVideo;
         },
         _hasSwipeStartPosition() {
             const hasSwipeStartPosition = this.swipeStartPosition !== null;
@@ -103,7 +114,13 @@ window.Rolls = function () {
             this._revokeBackgroundVideoUrl();
             this._setBackgroundVideoUrl(file);
             this._setBackgroundVideo(video);
+            this._setVideoEnabled();
             this._resetVideoInput(event);
+        },
+        _removeBackgroundVideo(video) {
+            this._revokeBackgroundVideoUrl();
+            this._clearBackgroundVideo(video);
+            this._setVideoDisabled();
         },
         _revokeBackgroundVideoUrl() {
             if (this._hasBackgroundVideoUrl()) {
@@ -121,6 +138,17 @@ window.Rolls = function () {
             video.volume = 0.4;
             video.load();
             video.play().catch(() => { });
+        },
+        _clearBackgroundVideo(video) {
+            video.removeAttribute('src');
+            video.load();
+            this.backgroundVideoUrl = null;
+        },
+        _setVideoEnabled() {
+            this.isVideo = true;
+        },
+        _setVideoDisabled() {
+            this.isVideo = false;
         },
         _resetVideoInput(event) {
             event.target.value = '';

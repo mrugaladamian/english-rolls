@@ -7,7 +7,9 @@
         <div class="rolls-icons">
             <img class="option-icon" :src="loudspeakerIcon" alt="speak" @click="isSpeak = !isSpeak"
                 :class="isSpeak ? 'opacity-100' : 'opacity-20'">
-            <img class="option-icon" :src="filmIcon" alt="film" @click="$refs.videoInput.click()">
+            <img class="option-icon" :src="filmIcon" alt="film"
+                @click="videoIconClick($refs.videoInput, $refs.backgroundVideo)"
+                :class="isVideo ? 'opacity-100' : 'opacity-20'">
             <input class="hidden" type="file" accept="video/*" x-ref="videoInput"
                 @change="loadBackgroundVideo($event, $refs.backgroundVideo)">
         </div>
