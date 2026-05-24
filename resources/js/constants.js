@@ -1,11 +1,12 @@
 export const ROLL_LEVEL_MAX = 3;
 export const RESET_ROLLS_LEVEL = 5;
 export const ROLLS_JSON_KEY = 'rolls';
-export const SWIPE_MIN_DISTANCE = 100;
-export const SWIPE_LONG_DISTANCE = 250;
+export const SWIPE_MIN_DISTANCE = 60;
+export const SWIPE_LONG_DISTANCE = 200;
 export const VIDEO_SHORT_TIME_JUMP = 20;
 export const VIDEO_LONG_TIME_JUMP = 90;
 export const VIDEO_MIN_TIME = 0;
+export const VIDEO_JUMP_MESSAGE_TIMEOUT = 600;
 export const INITIAL_ROLLS = [
     {
         id: 1,

@@ -4,6 +4,8 @@
     <div class="touch-pan-y" x-data="window.Rolls()" @pointerdown="swipeStart($event)"
         @pointerup="swipeEnd($event, $refs.backgroundVideo)" @pointercancel="swipeCancel()">
         <video x-ref="backgroundVideo" loop autoplay playsinline preload="auto"></video>
+        <div class="fixed left-1/2 top-1/2 z-[1200] -translate-x-1/2 -translate-y-1/2 rounded-md bg-black/70 px-6 py-3 text-3xl font-semibold text-white shadow-lg"
+            x-show="videoJumpText" x-transition.opacity.duration.200ms x-text="videoJumpText"></div>
         <div class="rolls-icons">
             <img class="option-icon" :src="loudspeakerIcon" alt="speak" @click="isSpeak = !isSpeak"
                 :class="isSpeak ? 'opacity-100' : 'opacity-20'">

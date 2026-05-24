@@ -7,7 +7,8 @@ import {
     SWIPE_LONG_DISTANCE,
     VIDEO_SHORT_TIME_JUMP,
     VIDEO_LONG_TIME_JUMP,
-    VIDEO_MIN_TIME
+    VIDEO_MIN_TIME,
+    VIDEO_JUMP_MESSAGE_TIMEOUT
 } from './constants.js';
 import { shuffle } from './utils.js';
 window.Rolls = function () {
@@ -19,6 +20,8 @@ window.Rolls = function () {
         swipeStartPosition: null,
         rolls: {},
         backgroundVideoUrl: null,
+        videoJumpText: '',
+        videoJumpTimeout: null,
         init() {
             this.rolls = this._getRollsFromLocalStorage();
         },
@@ -114,15 +117,35 @@ window.Rolls = function () {
             }
         },
         _moveVideoForward(video, swipePosition) {
-            const videoTime = video.currentTime + this._getSwipeVideoTimeJump(swipePosition);
+            const videoTimeJump = this._getSwipeVideoTimeJump(swipePosition);
+            const videoTime = video.currentTime + videoTimeJump;
             this._setVideoTime(video, videoTime);
+            this._showLongSwipeVideoJump(swipePosition, videoTimeJump);
         },
         _moveVideoBackward(video, swipePosition) {
-            const videoTime = video.currentTime - this._getSwipeVideoTimeJump(swipePosition);
+            const videoTimeJump = this._getSwipeVideoTimeJump(swipePosition);
+            const videoTime = video.currentTime - videoTimeJump;
             this._setVideoTime(video, videoTime);
+            this._showLongSwipeVideoJump(swipePosition, videoTimeJump);
         },
         _setVideoTime(video, videoTime) {
             video.currentTime = Math.max(VIDEO_MIN_TIME, videoTime);
+        },
+        _showLongSwipeVideoJump(swipePosition, videoTimeJump) {
+            if (this._isLongSwipe(swipePosition)) {
+                this._showVideoJump(`${this._getSwipeDirectionSign(swipePosition)}${videoTimeJump}s`);
+            }
+        },
+        _showVideoJump(videoJumpText) {
+            this.videoJumpText = videoJumpText;
+            clearTimeout(this.videoJumpTimeout);
+            this.videoJumpTimeout = setTimeout(() => {
+                this.videoJumpText = '';
+            }, VIDEO_JUMP_MESSAGE_TIMEOUT);
+        },
+        _getSwipeDirectionSign(swipePosition) {
+            const swipeDirectionSign = this._isSwipeRight(swipePosition) ? '+' : '-';
+            return swipeDirectionSign;
         },
         _getSwipeVideoTimeJump(swipePosition) {
             let videoTimeJump = VIDEO_SHORT_TIME_JUMP;
