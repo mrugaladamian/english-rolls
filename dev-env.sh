@@ -20,5 +20,6 @@ alias c="git commit -m"
 alias commit=c
 alias backup="./codeplatform/tools/bin/backup"
 alias backup-list="./codeplatform/tools/bin/backup-list"
+alias backup-last="./codeplatform/tools/bin/backup-last"
 
 chmod +x codeplatform/tools/bin/*
