@@ -1,4 +1,14 @@
-import { ROLLS_JSON_KEY, INITIAL_ROLLS, ROLL_LEVEL_MAX, RESET_ROLLS_LEVEL } from './constants.js';
+import {
+    ROLLS_JSON_KEY,
+    INITIAL_ROLLS,
+    ROLL_LEVEL_MAX,
+    RESET_ROLLS_LEVEL,
+    SWIPE_MIN_DISTANCE,
+    SWIPE_LONG_DISTANCE,
+    VIDEO_SHORT_TIME_JUMP,
+    VIDEO_LONG_TIME_JUMP,
+    VIDEO_MIN_TIME
+} from './constants.js';
 import { shuffle } from './utils.js';
 window.Rolls = function () {
     return {
@@ -88,18 +98,49 @@ window.Rolls = function () {
             return hasSwipeStartPosition;
         },
         _handleSwipe(swipePosition, video) {
-            if (this._isSwipeRight(swipePosition)) {
-                video.currentTime += 20;
-            } else if (this._isSwipeLeft(swipePosition)) {
-                video.currentTime -= 20;
+            if (this._canSwipeVideo(video)) {
+                this._swipeVideo(swipePosition, video);
             }
         },
+        _canSwipeVideo(video) {
+            const canSwipeVideo = this._isVideoEnabled() && video;
+            return canSwipeVideo;
+        },
+        _swipeVideo(swipePosition, video) {
+            if (this._isSwipeRight(swipePosition)) {
+                this._moveVideoForward(video, swipePosition);
+            } else if (this._isSwipeLeft(swipePosition)) {
+                this._moveVideoBackward(video, swipePosition);
+            }
+        },
+        _moveVideoForward(video, swipePosition) {
+            const videoTime = video.currentTime + this._getSwipeVideoTimeJump(swipePosition);
+            this._setVideoTime(video, videoTime);
+        },
+        _moveVideoBackward(video, swipePosition) {
+            const videoTime = video.currentTime - this._getSwipeVideoTimeJump(swipePosition);
+            this._setVideoTime(video, videoTime);
+        },
+        _setVideoTime(video, videoTime) {
+            video.currentTime = Math.max(VIDEO_MIN_TIME, videoTime);
+        },
+        _getSwipeVideoTimeJump(swipePosition) {
+            let videoTimeJump = VIDEO_SHORT_TIME_JUMP;
+            if (this._isLongSwipe(swipePosition)) {
+                videoTimeJump = VIDEO_LONG_TIME_JUMP;
+            }
+            return videoTimeJump;
+        },
+        _isLongSwipe(swipePosition) {
+            const isLongSwipe = Math.abs(swipePosition) > SWIPE_LONG_DISTANCE;
+            return isLongSwipe;
+        },
         _isSwipeRight(swipePosition) {
-            const isSwipeRight = swipePosition > 100;
+            const isSwipeRight = swipePosition > SWIPE_MIN_DISTANCE;
             return isSwipeRight;
         },
         _isSwipeLeft(swipePosition) {
-            const isSwipeLeft = swipePosition < -100;
+            const isSwipeLeft = swipePosition < -SWIPE_MIN_DISTANCE;
             return isSwipeLeft;
         },
         _shouldResetRolls() {
