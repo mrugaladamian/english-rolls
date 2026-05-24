@@ -5,10 +5,24 @@ window.Rolls = function () {
         isPlContent: true,
         isSpeak: true,
         resetRollsLevel: 0,
+        swipeStartPosition: null,
         rolls: {},
         backgroundVideoUrl: null,
         init() {
             this.rolls = this._getRollsFromLocalStorage();
+        },
+        swipeStart(event) {
+            this.swipeStartPosition = event.clientX;
+        },
+        swipeEnd(event, video) {
+            if (this._hasSwipeStartPosition()) {
+                const swipePosition = event.clientX - this.swipeStartPosition;
+                this.swipeStartPosition = null;
+                this._handleSwipe(swipePosition, video);
+            }
+        },
+        swipeCancel() {
+            this.swipeStartPosition = null;
         },
         nextRoll() {
             this.isPlContent = true;
@@ -37,9 +51,8 @@ window.Rolls = function () {
                 this.resetRolls();
             }
         },
-        loadBackgroundVideo(event) {
+        loadBackgroundVideo(event, video) {
             const file = event.target.files?.[0];
-            const video = document.getElementById('bgVideo');
             if (this._canLoadBackgroundVideo(file, video)) {
                 this._loadSelectedBackgroundVideo(file, video, event);
             }
@@ -58,6 +71,25 @@ window.Rolls = function () {
         },
         _isSpeakEnabled() {
             return this.isSpeak;
+        },
+        _hasSwipeStartPosition() {
+            const hasSwipeStartPosition = this.swipeStartPosition !== null;
+            return hasSwipeStartPosition;
+        },
+        _handleSwipe(swipePosition, video) {
+            if (this._isSwipeRight(swipePosition)) {
+                video.currentTime += 20;
+            } else if (this._isSwipeLeft(swipePosition)) {
+                video.currentTime -= 20;
+            }
+        },
+        _isSwipeRight(swipePosition) {
+            const isSwipeRight = swipePosition > 100;
+            return isSwipeRight;
+        },
+        _isSwipeLeft(swipePosition) {
+            const isSwipeLeft = swipePosition < -100;
+            return isSwipeLeft;
         },
         _shouldResetRolls() {
             const shouldResetRolls = this.resetRollsLevel++ === RESET_ROLLS_LEVEL;
@@ -88,7 +120,7 @@ window.Rolls = function () {
             video.src = this.backgroundVideoUrl;
             video.volume = 0.4;
             video.load();
-            video.play().catch(() => {});
+            video.play().catch(() => { });
         },
         _resetVideoInput(event) {
             event.target.value = '';

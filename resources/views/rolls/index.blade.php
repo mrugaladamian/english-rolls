@@ -1,12 +1,15 @@
 @extends('layouts.rolls')
 @section('title', 'Rolls')
 @section('content')
-    <div x-data="window.Rolls()">
+    <div class="touch-pan-y" x-data="window.Rolls()" @pointerdown="swipeStart($event)"
+        @pointerup="swipeEnd($event, $refs.backgroundVideo)" @pointercancel="swipeCancel()">
+        <video x-ref="backgroundVideo" loop autoplay playsinline preload="auto"></video>
         <div class="rolls-icons">
             <img class="option-icon" :src="loudspeakerIcon" alt="speak" @click="isSpeak = !isSpeak"
                 :class="isSpeak ? 'opacity-100' : 'opacity-20'">
             <img class="option-icon" :src="filmIcon" alt="film" @click="$refs.videoInput.click()">
-            <input class="hidden" type="file" accept="video/*" x-ref="videoInput" @change="loadBackgroundVideo($event)">
+            <input class="hidden" type="file" accept="video/*" x-ref="videoInput"
+                @change="loadBackgroundVideo($event, $refs.backgroundVideo)">
         </div>
         <div class="fixed inset-0 z-10" x-show="isPlContent" @click.stop="rollPlContentClick()">
             <div class="absolute left-0 top-[24vh] w-screen px-6 text-center">
