@@ -3,7 +3,7 @@
 @section('content')
     <div class="rolls-touch-surface" x-data="window.Rolls()" @pointerdown="swipeStart($event)"
         @pointerup="swipeEnd($event, $refs.backgroundVideo)" @pointercancel="swipeCancel()">
-        <video x-ref="backgroundVideo" loop autoplay playsinline preload="auto"></video>
+        <video class="background-video" x-ref="backgroundVideo" loop autoplay playsinline preload="auto"></video>
         <div class="video-jump-text-kind" x-show="isVideoJumpVisible" x-transition:enter="transition ease-out duration-300"
             x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
             x-transition:leave="transition ease-in duration-500" x-transition:leave-start="opacity-100 scale-100"
@@ -19,13 +19,13 @@
         </div>
         <div class="roll-content-layer" x-show="isPlContent" @click.stop="rollPlContentClick()">
             <div class="roll-content-text">
-                <h1 x-text="rolls[0].pl"></h1>
+                <h1 class="roll-content-title" x-text="rolls[0].pl"></h1>
             </div>
         </div>
         <div class="roll-content-layer" x-show="!isPlContent" @click.stop="nextRoll()">
             <div class="roll-content-text">
-                <h1 x-text="rolls[0].en"></h1>
-                <h2 x-text="rolls[0].phonetic"></h2>
+                <h1 class="roll-content-title" x-text="rolls[0].en"></h1>
+                <h2 class="roll-content-phonetic" x-text="rolls[0].phonetic"></h2>
             </div>
             <button class="passed-button-kind" @click.stop="passedRoll()">✓</button>
         </div>

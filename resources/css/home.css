@@ -1,0 +1,68 @@
+.home-body {
+    @apply min-h-screen bg-zinc-50 text-zinc-950 antialiased;
+}
+
+.home-page {
+    @apply min-h-screen px-5 py-6 sm:px-8 lg:px-12;
+}
+
+.home-hero {
+    @apply mx-auto grid min-h-[72vh] w-full max-w-6xl items-center gap-10 border-b border-zinc-200 pb-10
+           md:grid-cols-[1.05fr_0.95fr];
+}
+
+.home-copy {
+    @apply max-w-2xl;
+}
+
+.home-kicker {
+    @apply mb-4 text-sm font-semibold uppercase tracking-wider text-emerald-700;
+}
+
+.home-title {
+    @apply text-4xl font-semibold leading-tight text-zinc-950 sm:text-5xl;
+}
+
+.home-lead {
+    @apply mt-5 max-w-xl text-lg leading-8 text-zinc-700;
+}
+
+.home-start-link {
+    @apply mt-8 inline-flex min-h-14 items-center justify-center rounded-md bg-emerald-600 px-7
+           text-base font-semibold text-white shadow-lg shadow-emerald-900/10 transition
+           hover:bg-emerald-700 focus:outline-none focus:ring-4 focus:ring-emerald-200;
+}
+
+.home-preview {
+    @apply grid min-h-72 content-center gap-3 rounded-lg border border-zinc-200 bg-white p-8
+           shadow-xl shadow-zinc-900/5 cursor-pointer select-none transition hover:border-emerald-200
+           hover:shadow-emerald-900/10;
+}
+
+.home-preview-translation {
+    @apply text-lg text-zinc-600;
+}
+
+.home-preview-word {
+    @apply text-4xl font-semibold text-zinc-950;
+}
+
+.home-preview-phonetic {
+    @apply text-xl text-emerald-700;
+}
+
+.home-sections {
+    @apply mx-auto grid w-full max-w-6xl gap-4 py-10 md:grid-cols-3;
+}
+
+.home-info-item {
+    @apply rounded-lg border border-zinc-200 bg-white p-6 shadow-sm shadow-zinc-900/5;
+}
+
+.home-info-title {
+    @apply text-lg font-semibold text-zinc-950;
+}
+
+.home-info-text {
+    @apply mt-3 leading-7 text-zinc-700;
+}

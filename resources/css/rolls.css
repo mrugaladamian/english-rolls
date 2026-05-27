@@ -1,12 +1,5 @@
-button {
-    user-select: none;
-}
-
-body {
-    background: black;
-}
-
 .rolls-body {
+    background: black;
     @apply min-h-screen flex items-start justify-center pt-[28vh];
 }
 
@@ -18,31 +11,35 @@ body {
     @apply touch-pan-y;
 }
 
-h1 {
+.roll-content-title {
     font-size: 26px;
     letter-spacing: 0.04em;    
     user-select: none;
 }
 
-h2 {
+.roll-content-phonetic {
     font-size: 18px;
     letter-spacing: 0.04em;    
     user-select: none;
 }
 
-h3 {
+.rolls-length-text-kind {
     letter-spacing: 0.04em;    
     user-select: none;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-h1,
-h2,
-h3 {
+.roll-content-title,
+.roll-content-phonetic,
+.rolls-length-text-kind {
     color: white;
     text-shadow: 0 0 3px black, 0 0 8px black;
 }
 
-video {
+.background-video {
     position: fixed;
     top: 0;
     left: 50%;
@@ -80,6 +77,7 @@ video {
 
     box-shadow: 0 10px 25px -5px rgb(16 185 129 / 0.4);
     transition: all 0.25s ease;
+    user-select: none;
 }
 
 .rolls-icons {
@@ -99,11 +97,4 @@ video {
     transition: transform 0.2s ease;
     user-select: none;
     -webkit-user-drag: none;
-}
-
-.rolls-length-text-kind {
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
 }
