@@ -10,8 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </head>
 
-<body class="min-h-screen flex items-start justify-center pt-[28vh]">
-    <div class="w-full max-w-lg mx-auto px-6">
+<body class="rolls-body">
+    <div class="rolls-layout-container">
         @yield('content')
     </div>
 </body>

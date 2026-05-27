@@ -6,6 +6,18 @@ body {
     background: black;
 }
 
+.rolls-body {
+    @apply min-h-screen flex items-start justify-center pt-[28vh];
+}
+
+.rolls-layout-container {
+    @apply w-full max-w-lg mx-auto px-6;
+}
+
+.rolls-touch-surface {
+    @apply touch-pan-y;
+}
+
 h1 {
     font-size: 26px;
     letter-spacing: 0.04em;    
@@ -40,6 +52,24 @@ video {
     max-width: none;
     transform: translateX(-50%);
     pointer-events: none;
+}
+
+.video-jump-text-kind {
+    @apply pointer-events-none fixed left-1/2 top-1/2 z-[1200]
+           -translate-x-1/2 -translate-y-1/2 rounded-md bg-black/70
+           px-6 py-3 text-3xl font-semibold text-white shadow-lg;
+}
+
+.background-video-input {
+    @apply hidden;
+}
+
+.roll-content-layer {
+    @apply fixed inset-0 z-10;
+}
+
+.roll-content-text {
+    @apply absolute left-0 top-[24vh] w-screen px-6 text-center;
 }
 
 .passed-button-kind {
