@@ -33,6 +33,10 @@ The user-facing instructions are available in [docs/usage.md](docs/usage.md).
 
 Guidelines for working with AI assistants on this project are available in [docs/ai.md](docs/ai.md).
 
+## Codeplatform Tools
+
+Project helper tool documentation is available in [docs/codeplatform.md](docs/codeplatform.md).
+
 ## Live Demo
 
 The production version is available at [english-rolls.onrender.com](https://english-rolls.onrender.com/).
@@ -45,6 +49,7 @@ The production version is available at [english-rolls.onrender.com](https://engl
 - `resources/js` - frontend behavior
 - `resources/data` - vocabulary source files
 - `docs/ai.md` - AI collaboration and code style guidelines
+- `docs/codeplatform.md` - Codeplatform helper tool documentation
 - `docs/usage.md` - user guide
 - `render.yaml` - Render deployment configuration
 
