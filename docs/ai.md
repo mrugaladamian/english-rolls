@@ -28,3 +28,10 @@ English Rolls is a small web service for Polish-speaking users who want to learn
 - Keep each `if`, loop, and `try/catch` block limited to one main statement or one method call whenever practical.
 - Avoid empty lines inside methods.
 - Use at most one `return` statement per method.
+
+## CSS Class Guidelines
+
+- Static `class` attributes in Blade views should use one semantic CSS class name.
+- Move Tailwind utility classes from Blade views into the related CSS file and use `@apply` there.
+- Move repeated class sets and classes with calculated or arbitrary values into CSS.
+- Dynamic Alpine.js classes such as `:class` and transition classes may stay in Blade when they describe state or animation behavior.
