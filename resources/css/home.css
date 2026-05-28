@@ -66,3 +66,13 @@
 .home-info-text {
     @apply mt-3 leading-7 text-zinc-700;
 }
+
+.home-footer {
+    @apply mx-auto flex w-full max-w-6xl flex-col gap-2 border-t border-zinc-200 py-6 text-sm
+           text-zinc-500 sm:flex-row sm:items-center sm:justify-between;
+}
+
+.home-footer a {
+    @apply font-medium text-emerald-700 transition hover:text-emerald-800 focus:outline-none
+           focus:ring-4 focus:ring-emerald-200;
+}

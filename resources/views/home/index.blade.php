@@ -46,4 +46,9 @@
             </article>
         </section>
     </main>
+
+    <footer class="home-footer">
+        <p>© 2026 Damian Mrugała. Wszelkie prawa zastrzeżone.</p>
+        <a href="mailto:mrugala.damian@gmail.com">mrugala.damian@gmail.com</a>
+    </footer>
 @endsection
