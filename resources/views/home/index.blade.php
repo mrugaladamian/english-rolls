@@ -4,7 +4,10 @@
     <main class="home-page">
         <section class="home-hero">
             <div class="home-copy">
-                <p class="home-kicker">English Rolls</p>
+                <div class="home-brand">
+                    <img class="home-logo" src="{{ asset('logo.png') }}" alt="" aria-hidden="true">
+                    <p class="home-kicker">English Rolls</p>
+                </div>
                 <h1 class="home-title">Prosta nauka angielskich słówek</h1>
                 <p class="home-lead">
                     Ćwicz krótkie słowa i zwroty w szybkim rytmie: najpierw widzisz polskie znaczenie,
