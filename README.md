@@ -25,6 +25,14 @@ English Rolls works like a minimal flashcard experience. The user starts with a 
 - Tailwind CSS 4
 - Docker
 
+## Purpose
+
+This project is a portfolio-ready Laravel microservice built to demonstrate PHP skills after a break from professional development. It focuses on a lightweight, usable vocabulary training experience for Polish-speaking learners.
+
+## License
+
+This project is released under the MIT License. See [/license](https://english-rolls.onrender.com/license) for details.
+
 ## User Guide
 
 The user-facing instructions are available in [docs/usage.md](docs/usage.md).
