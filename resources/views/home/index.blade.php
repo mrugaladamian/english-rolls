@@ -51,7 +51,7 @@
     </main>
 
     <footer class="home-footer">
-        <p>© 2026 Damian Mrugała. Wszelkie prawa zastrzeżone.</p>
+        <p>© 2026 Damian Mrugała. Projekt udostępniony na licencji MIT.</p>
         <a href="mailto:mrugala.damian@gmail.com">mrugala.damian@gmail.com</a>
     </footer>
 @endsection
