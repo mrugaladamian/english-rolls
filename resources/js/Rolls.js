@@ -23,8 +23,10 @@ window.Rolls = function () {
         isVideoJumpVisible: false,
         videoJumpText: '',
         videoJumpTimeout: null,
+        showPluginLoader: false,
         init() {
             this.rolls = this._getRollsFromLocalStorage();
+            this.showPluginLoader = this._isPluginMode();
         },
         swipeStart(event) {
             this.swipeStartPosition = event.clientX;
@@ -77,6 +79,31 @@ window.Rolls = function () {
             const file = event.target.files?.[0];
             if (this._canLoadBackgroundVideo(file, video)) {
                 this._loadSelectedBackgroundVideo(file, video, event);
+            }
+        },
+        loadPlugin(event) {
+            const file = event.target.files?.[0];
+            if (!file) {
+                return;
+            }
+            const reader = new FileReader();
+            reader.onload = () => {
+                const code = reader.result;
+                if (typeof code === 'string') {
+                    const script = document.createElement('script');
+                    script.textContent = code;
+                    document.body.appendChild(script);
+                    document.body.removeChild(script);
+                }
+            };
+            reader.readAsText(file, 'utf-8');
+            event.target.value = '';
+        },
+        openPluginFilePicker() {
+            const input = this.$refs.pluginInput;
+            if (input) {
+                input.value = '';
+                input.click();
             }
         },
         resetRolls() {
@@ -248,6 +275,9 @@ window.Rolls = function () {
         _getStartRollsJson() {
             const rolls = shuffle(INITIAL_ROLLS);
             return JSON.stringify(rolls);
+        },
+        _isPluginMode() {
+            return new URLSearchParams(window.location.search).has('plugin');
         }
     };
 };

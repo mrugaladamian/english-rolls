@@ -1,7 +1,7 @@
 @extends('layouts.rolls')
 @section('title', 'Rolls')
 @section('content')
-    <div class="rolls-touch-surface" x-data="window.Rolls()" @pointerdown="swipeStart($event)"
+    <div class="rolls-touch-surface" x-data="window.Rolls()" x-init="init()" @pointerdown="swipeStart($event)"
         @pointerup="swipeEnd($event, $refs.backgroundVideo)" @pointercancel="swipeCancel()">
         <video class="background-video" x-ref="backgroundVideo" loop autoplay playsinline preload="auto"></video>
         <div class="video-jump-text-kind" x-show="isVideoJumpVisible" x-transition:enter="transition ease-out duration-300"
@@ -14,8 +14,14 @@
             <img class="option-icon" :src="filmIcon" alt="film"
                 @click="videoIconClick($refs.videoInput, $refs.backgroundVideo)"
                 :class="isVideo ? 'opacity-100' : 'opacity-20'">
+            <button class="option-icon" type="button" x-show="showPluginLoader" @click.stop="openPluginFilePicker()"
+                style="background:transparent;border:none;color:inherit;cursor:pointer;padding:0.25rem 0.5rem;">
+                Plugin
+            </button>
             <input class="background-video-input" type="file" accept="video/*" x-ref="videoInput"
                 @change="loadBackgroundVideo($event, $refs.backgroundVideo)">
+            <input type="file" accept=".js,application/javascript" x-ref="pluginInput" style="display:none"
+                @change="loadPlugin($event)">
         </div>
         <div class="roll-content-layer" x-show="isPlContent" @click.stop="rollPlContentClick()">
             <div class="roll-content-text">
