@@ -100,6 +100,7 @@ window.Rolls = function () {
             event.target.value = '';
         },
         openPluginFilePicker() {
+            this.showPluginLoader = false;
             const input = this.$refs.pluginInput;
             if (input) {
                 input.value = '';
