@@ -3,7 +3,8 @@
 @section('content')
     <div class="rolls-touch-surface" x-data="window.Rolls()" x-init="init()" @pointerdown="swipeStart($event)"
         @pointerup="swipeEnd($event, $refs.backgroundVideo)" @pointercancel="swipeCancel()">
-        <video class="background-video" x-ref="backgroundVideo" loop autoplay playsinline preload="auto"></video>
+        <video class="background-video" x-ref="backgroundVideo" loop autoplay playsinline preload="auto"
+            @loadedmetadata="videoLoaded()"></video>
         <div class="video-jump-text-kind" x-show="isVideoJumpVisible" x-transition:enter="transition ease-out duration-300"
             x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
             x-transition:leave="transition ease-in duration-500" x-transition:leave-start="opacity-100 scale-100"

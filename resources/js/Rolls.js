@@ -111,6 +111,11 @@ window.Rolls = function () {
             localStorage.removeItem(ROLLS_JSON_KEY);
             this.init();
         },
+        videoLoaded() {
+            if (!this.isVideo && this.$refs.backgroundVideo?.src) {
+                this.isVideo = true;
+            }
+        },
         speakCurrentRollEn() {
             const text = this.rolls[0]?.en?.trim();
             responsiveVoice.speak(text, "US English Female", {
@@ -126,8 +131,7 @@ window.Rolls = function () {
             return this.isVideo;
         },
         _hasSwipeStartPosition() {
-            const hasSwipeStartPosition = this.swipeStartPosition !== null;
-            return hasSwipeStartPosition;
+            return this.swipeStartPosition !== null;
         },
         _handleSwipe(swipePosition, video) {
             if (this._canSwipeVideo(video)) {
@@ -135,8 +139,7 @@ window.Rolls = function () {
             }
         },
         _canSwipeVideo(video) {
-            const canSwipeVideo = this._isVideoEnabled() && video;
-            return canSwipeVideo;
+            return this._isVideoEnabled() && !!video;
         },
         _swipeVideo(swipePosition, video) {
             if (this._isSwipeRight(swipePosition)) {
@@ -174,35 +177,25 @@ window.Rolls = function () {
             }, VIDEO_JUMP_MESSAGE_TIMEOUT);
         },
         _getSwipeDirectionSign(swipePosition) {
-            const swipeDirectionSign = this._isSwipeRight(swipePosition) ? '+' : '-';
-            return swipeDirectionSign;
+            return this._isSwipeRight(swipePosition) ? '+' : '-';
         },
         _getSwipeVideoTimeJump(swipePosition) {
-            let videoTimeJump = VIDEO_SHORT_TIME_JUMP;
-            if (this._isLongSwipe(swipePosition)) {
-                videoTimeJump = VIDEO_LONG_TIME_JUMP;
-            }
-            return videoTimeJump;
+            return this._isLongSwipe(swipePosition) ? VIDEO_LONG_TIME_JUMP : VIDEO_SHORT_TIME_JUMP;
         },
         _isLongSwipe(swipePosition) {
-            const isLongSwipe = Math.abs(swipePosition) > SWIPE_LONG_DISTANCE;
-            return isLongSwipe;
+            return Math.abs(swipePosition) > SWIPE_LONG_DISTANCE;
         },
         _isSwipeRight(swipePosition) {
-            const isSwipeRight = swipePosition > SWIPE_MIN_DISTANCE;
-            return isSwipeRight;
+            return swipePosition > SWIPE_MIN_DISTANCE;
         },
         _isSwipeLeft(swipePosition) {
-            const isSwipeLeft = swipePosition < -SWIPE_MIN_DISTANCE;
-            return isSwipeLeft;
+            return swipePosition < -SWIPE_MIN_DISTANCE;
         },
         _shouldResetRolls() {
-            const shouldResetRolls = this.resetRollsLevel++ === RESET_ROLLS_LEVEL;
-            return shouldResetRolls;
+            return this.resetRollsLevel++ === RESET_ROLLS_LEVEL;
         },
         _canLoadBackgroundVideo(file, video) {
-            const canLoadBackgroundVideo = file && video;
-            return canLoadBackgroundVideo;
+            return file && video;
         },
         _loadSelectedBackgroundVideo(file, video, event) {
             this._revokeBackgroundVideoUrl();
@@ -259,8 +252,7 @@ window.Rolls = function () {
             }
         },
         _isCurrentRollPassed() {
-            const isCurrentRollPassed = this.rolls[0].level >= ROLL_LEVEL_MAX;
-            return isCurrentRollPassed;
+            return this.rolls[0].level >= ROLL_LEVEL_MAX;
         },
         _removeCurrentRoll() {
             this.rolls.shift();
@@ -269,13 +261,10 @@ window.Rolls = function () {
             this.rolls.push(this.rolls.shift());
         },
         _getRollsFromLocalStorage() {
-            const rollsJson = localStorage.getItem(ROLLS_JSON_KEY) ?? this._getStartRollsJson();
-            const rolls = JSON.parse(rollsJson);
-            return rolls;
+            return JSON.parse(localStorage.getItem(ROLLS_JSON_KEY) ?? this._getStartRollsJson());
         },
         _getStartRollsJson() {
-            const rolls = shuffle(INITIAL_ROLLS);
-            return JSON.stringify(rolls);
+            return JSON.stringify(shuffle(INITIAL_ROLLS));
         },
         _isPluginMode() {
             return new URLSearchParams(window.location.search).has('plugin');
