@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+projectDir=$(pwd)
+projectName=$(basename "$projectDir")
+backupDir="$HOME/backup/$projectName"
+backupFile="$backupDir/$(date +%Y-%m-%d_%H-%M-%S).zip"
+mkdir -p "$backupDir"
+zip -q -r "$backupFile" .
+rclone copy $backupFile gdrive:Backups/$projectName
+echo "Backup saved: $backupFile"

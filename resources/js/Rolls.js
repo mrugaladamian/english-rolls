@@ -192,7 +192,13 @@ window.Rolls = function () {
             return swipePosition < -SWIPE_MIN_DISTANCE;
         },
         _shouldResetRolls() {
-            return this.resetRollsLevel++ === RESET_ROLLS_LEVEL;
+            this.resetRollsLevel++;
+            if (this.resetRollsLevel < RESET_ROLLS_LEVEL) {
+                return false;
+            }
+
+            this.resetRollsLevel = 0;
+            return true;
         },
         _canLoadBackgroundVideo(file, video) {
             return file && video;

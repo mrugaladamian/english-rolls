@@ -27,9 +27,11 @@
     letter-spacing: 0.04em;    
     user-select: none;
     position: fixed;
+    z-index: 20;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
+    cursor: pointer;
 }
 
 .roll-content-title,

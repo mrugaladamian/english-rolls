@@ -1,4 +1,4 @@
-export const ROLL_LEVEL_MAX = 3;
+export const ROLL_LEVEL_MAX = 2;
 export const RESET_ROLLS_LEVEL = 5;
 export const ROLLS_JSON_KEY = 'rolls';
 export const SWIPE_MIN_DISTANCE = 60;
@@ -76,13 +76,6 @@ export const INITIAL_ROLLS = [
         pl: "akademicki",
         en: "academic",
         phonetic: "a-ka-DE-mik",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 11,
-        pl: "akcent",
-        en: "accent",
-        phonetic: "AK-sent",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -219,13 +212,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 31,
-        pl: "akcja, działanie",
-        en: "action",
-        phonetic: "AK-szyn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 32,
         pl: "aktywny",
         en: "active",
@@ -237,13 +223,6 @@ export const INITIAL_ROLLS = [
         pl: "aktywność",
         en: "activity",
         phonetic: "ak-TI-wi-ti",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 34,
-        pl: "aktor",
-        en: "actor",
-        phonetic: "AK-ter",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -293,20 +272,6 @@ export const INITIAL_ROLLS = [
         pl: "dodatkowy",
         en: "additional",
         phonetic: "a-DI-szo-nl",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 42,
-        pl: "dodatek, opcja dodatkowa",
-        en: "add on",
-        phonetic: "AD on",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 43,
-        pl: "adres",
-        en: "address",
-        phonetic: "a-DRES",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -478,20 +443,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 68,
-        pl: "agencja",
-        en: "agency",
-        phonetic: "EJ-dżen-si",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 69,
-        pl: "agent",
-        en: "agent",
-        phonetic: "EJ-dżent",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 70,
         pl: "agresywny",
         en: "aggressive",
@@ -545,20 +496,6 @@ export const INITIAL_ROLLS = [
         pl: "lotnisko",
         en: "airport",
         phonetic: "ER-port",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 78,
-        pl: "alarm",
-        en: "alarm",
-        phonetic: "a-LARM",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 79,
-        pl: "alkohol",
-        en: "alcohol",
-        phonetic: "AL-ko-hol",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -625,13 +562,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 89,
-        pl: "alfabet",
-        en: "alphabet",
-        phonetic: "AL-fa-bet",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 90,
         pl: "alfabetyczny",
         en: "alphabetical",
@@ -671,13 +601,6 @@ export const INITIAL_ROLLS = [
         pl: "zadziwiać",
         en: "amaze",
         phonetic: "a-MEJZ",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 96,
-        pl: "ambicja",
-        en: "ambition",
-        phonetic: "am-BI-szyn",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -856,13 +779,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 122,
-        pl: "aplikacja, podanie",
-        en: "application",
-        phonetic: "a-pli-KEJ-szyn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 123,
         pl: "stosować, aplikować",
         en: "apply",
@@ -975,13 +891,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 139,
-        pl: "ustalenie, aranżacja",
-        en: "arrangement",
-        phonetic: "a-REJNDŻ-ment",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 140,
         pl: "aresztować",
         en: "arrest",
@@ -1087,13 +996,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 155,
-        pl: "aspekt",
-        en: "aspect",
-        phonetic: "AS-pekt",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 156,
         pl: "pomagać",
         en: "assist",
@@ -1150,24 +1052,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 164,
-        pl: "atom",
-        en: "atom",
-        phonetic: "A-tom",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 165,
         pl: "dołączać, przyczepiać",
         en: "attach",
         phonetic: "a-TACZ",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 166,
-        pl: "atak",
-        en: "attack",
-        phonetic: "a-TAK",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -1220,13 +1108,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 174,
-        pl: "atrakcja",
-        en: "attraction",
-        phonetic: "a-TRAK-szyn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 175,
         pl: "atrakcyjny",
         en: "attractive",
@@ -1238,13 +1119,6 @@ export const INITIAL_ROLLS = [
         pl: "publiczność",
         en: "audience",
         phonetic: "O-di-ենս",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 177,
-        pl: "autor",
-        en: "author",
-        phonetic: "O-ther",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -1430,13 +1304,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 204,
-        pl: "bank",
-        en: "bank",
-        phonetic: "BANK",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 205,
         pl: "bar",
         en: "bar",
@@ -1448,13 +1315,6 @@ export const INITIAL_ROLLS = [
         pl: "okazja, targować się",
         en: "bargain",
         phonetic: "BAR-gyn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 207,
-        pl: "bariera",
-        en: "barrier",
-        phonetic: "BA-ri-er",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -1620,7 +1480,7 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 231,
-        pl: "za",
+        pl: "za (z tyłu)",
         en: "behind",
         phonetic: "bi-HAJND",
         level: ROLL_LEVEL_MAX
@@ -1738,13 +1598,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 248,
-        pl: "biologia",
-        en: "biology",
-        phonetic: "baj-OL-o-dżi",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 249,
         pl: "narodziny",
         en: "birth",
@@ -1815,20 +1668,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 259,
-        pl: "blok",
-        en: "block",
-        phonetic: "BLOK",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 260,
-        pl: "blond",
-        en: "blonde",
-        phonetic: "BLOND",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 261,
         pl: "krew",
         en: "blood",
@@ -1875,13 +1714,6 @@ export const INITIAL_ROLLS = [
         pl: "wrzeć",
         en: "boil",
         phonetic: "BOJL",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 268,
-        pl: "bomba",
-        en: "bomb",
-        phonetic: "BOM",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -2207,13 +2039,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 315,
-        pl: "budżet",
-        en: "budget",
-        phonetic: "badżit",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 316,
         pl: "budować",
         en: "build",
@@ -2407,13 +2232,6 @@ export const INITIAL_ROLLS = [
         pl: "uspokoić się",
         en: "calm down",
         phonetic: "kam DAUN",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 344,
-        pl: "kamera",
-        en: "camera",
-        phonetic: "KA-me-ra",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -2614,7 +2432,7 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 373,
-        pl: "zamek",
+        pl: "zamek (budowla)",
         en: "castle",
         phonetic: "kasal",
         level: ROLL_LEVEL_MAX
@@ -2697,27 +2515,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 385,
-        pl: "cent",
-        en: "cent",
-        phonetic: "SENT",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 386,
-        pl: "centymetr",
-        en: "centimetre",
-        phonetic: "SEN-ti-mi-ter",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 387,
-        pl: "centralny",
-        en: "central",
-        phonetic: "SEN-tral",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 388,
         pl: "centrum",
         en: "centre",
@@ -2729,13 +2526,6 @@ export const INITIAL_ROLLS = [
         pl: "wiek",
         en: "century",
         phonetic: "SEN-czu-ri",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 390,
-        pl: "ceremonia",
-        en: "ceremony",
-        phonetic: "SE-re-mo-ni",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -2820,13 +2610,6 @@ export const INITIAL_ROLLS = [
         pl: "rozdział",
         en: "chapter",
         phonetic: "CZAP-ter",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 403,
-        pl: "charakter",
-        en: "character",
-        phonetic: "KA-rak-ter",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -3026,13 +2809,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 432,
-        pl: "chip",
-        en: "chip",
-        phonetic: "czip",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 433,
         pl: "czekolada",
         en: "chocolate",
@@ -3194,13 +2970,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 456,
-        pl: "klient",
-        en: "client",
-        phonetic: "KLAJ-ent",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 457,
         pl: "klimat",
         en: "climate",
@@ -3327,13 +3096,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 475,
-        pl: "kolekcja",
-        en: "collection",
-        phonetic: "ko-LEK-szyn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 476,
         pl: "uczelnia",
         en: "college",
@@ -3453,13 +3215,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 493,
-        pl: "komfort",
-        en: "comfort",
-        phonetic: "KAM-fert",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 494,
         pl: "komfortowy",
         en: "comfortable",
@@ -3537,13 +3292,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 505,
-        pl: "komunikacja",
-        en: "communication",
-        phonetic: "ko-mju-ni-KEJ-szyn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 506,
         pl: "społeczność",
         en: "community",
@@ -3576,13 +3324,6 @@ export const INITIAL_ROLLS = [
         pl: "konkurować",
         en: "compete",
         phonetic: "kom-PIT",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 511,
-        pl: "konkurencja",
-        en: "competition",
-        phonetic: "kom-pi-TI-szyn",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -3642,31 +3383,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 520,
-        pl: "koncentracja",
-        en: "concentration",
-        phonetic: "kon-sən-TREJ-szyn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 521,
-        pl: "koncepcja",
-        en: "concept",
-        phonetic: "KON-sept",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 522,
         pl: "dotyczyć",
         en: "concern",
         phonetic: "kon-SERN",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 523,
-        pl: "koncert",
-        en: "concert",
-        phonetic: "KON-sert",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -3702,13 +3422,6 @@ export const INITIAL_ROLLS = [
         pl: "prowadzić",
         en: "conduct",
         phonetic: "kon-DAKT",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 529,
-        pl: "konferencja",
-        en: "conference",
-        phonetic: "KON-fe-rəns",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -3782,13 +3495,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 540,
-        pl: "kongres",
-        en: "congress",
-        phonetic: "KON-gres",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 541,
         pl: "połączyć",
         en: "connect",
@@ -3807,13 +3513,6 @@ export const INITIAL_ROLLS = [
         pl: "świadomy",
         en: "conscious",
         phonetic: "KON-szes",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 544,
-        pl: "konsekwencja",
-        en: "consequence",
-        phonetic: "KON-si-kwens",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -3877,13 +3576,6 @@ export const INITIAL_ROLLS = [
         pl: "budować, konstruować",
         en: "construct",
         phonetic: "kon-STRAKT",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 554,
-        pl: "konstrukcja",
-        en: "construction",
-        phonetic: "kon-STRAK-szyn",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -3978,13 +3670,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 568,
-        pl: "kontrast",
-        en: "contrast",
-        phonetic: "KON-trast",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 569,
         pl: "przyczyniać się",
         en: "contribute",
@@ -3999,24 +3684,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 571,
-        pl: "kontrola",
-        en: "control",
-        phonetic: "kon-TROL",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 572,
         pl: "wygodne",
         en: "convenient",
         phonetic: "kanwinjant",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 573,
-        pl: "konwencja",
-        en: "convention",
-        phonetic: "kanwenszan",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -4098,7 +3769,7 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 585,
-        pl: "róg",
+        pl: "róg (narożnik)",
         en: "corner",
         phonetic: "KOR-ner",
         level: ROLL_LEVEL_MAX
@@ -4182,7 +3853,7 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 597,
-        pl: "para",
+        pl: "para (dwoje)",
         en: "couple",
         phonetic: "KA-pl",
         level: ROLL_LEVEL_MAX
@@ -4490,7 +4161,7 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 641,
-        pl: "obecny",
+        pl: "obecny (aktualny)",
         en: "current",
         phonetic: "KA-rent",
         level: ROLL_LEVEL_MAX
@@ -4699,13 +4370,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 671,
-        pl: "debata",
-        en: "debate",
-        phonetic: "di-BEJT",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 672,
         pl: "dług",
         en: "debt",
@@ -4769,13 +4433,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 681,
-        pl: "dekoracja",
-        en: "decoration",
-        phonetic: "de-ko-REJ-szyn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 682,
         pl: "dekoracyjne",
         en: "decorative",
@@ -4829,13 +4486,6 @@ export const INITIAL_ROLLS = [
         pl: "zdecydowany",
         en: "definite",
         phonetic: "defanat",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 690,
-        pl: "definicja",
-        en: "definition",
-        phonetic: "defaniszan",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -4902,24 +4552,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 700,
-        pl: "dentysta",
-        en: "dentist",
-        phonetic: "DEN-tist",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 701,
         pl: "zaprzeczać",
         en: "deny",
         phonetic: "di-NAJ",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 702,
-        pl: "departament",
-        en: "department",
-        phonetic: "di-PART-mənt",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -5063,13 +4699,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 723,
-        pl: "determinacja",
-        en: "determination",
-        phonetic: "di-ter-mi-NEJ-szyn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 724,
         pl: "określać",
         en: "determine",
@@ -5151,13 +4780,6 @@ export const INITIAL_ROLLS = [
         pl: "wymrzeć",
         en: "die out",
         phonetic: "daj AUT",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 736,
-        pl: "dieta",
-        en: "diet",
-        phonetic: "DAJ-et",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -5434,13 +5056,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 776,
-        pl: "dystrybucja",
-        en: "distribution",
-        phonetic: "distrabjuszan",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 777,
         pl: "dystrykt",
         en: "district",
@@ -5480,20 +5095,6 @@ export const INITIAL_ROLLS = [
         pl: "lekarz",
         en: "doctor",
         phonetic: "DOK-ter",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 783,
-        pl: "dokument",
-        en: "document",
-        phonetic: "DO-kju-ment",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 784,
-        pl: "dolar",
-        en: "dollar",
-        phonetic: "DA-ler",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -5567,13 +5168,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 795,
-        pl: "tuż",
-        en: "dozen",
-        phonetic: "DA-zn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 796,
         pl: "projekt",
         en: "draft",
@@ -5585,13 +5179,6 @@ export const INITIAL_ROLLS = [
         pl: "przeciągnij",
         en: "drag",
         phonetic: "drag",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 798,
-        pl: "dramat",
-        en: "drama",
-        phonetic: "DRA-ma",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -5854,13 +5441,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 836,
-        pl: "edycja",
-        en: "edition",
-        phonetic: "i-DI-szyn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 837,
         pl: "redaktor",
         en: "editor",
@@ -5872,13 +5452,6 @@ export const INITIAL_ROLLS = [
         pl: "edukować",
         en: "educate",
         phonetic: "edżakejt",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 839,
-        pl: "edukacja",
-        en: "education",
-        phonetic: "e-dju-KEJ-szyn",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -5994,13 +5567,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 856,
-        pl: "element",
-        en: "element",
-        phonetic: "E-le-ment",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 857,
         pl: "winda",
         en: "elevator",
@@ -6012,13 +5578,6 @@ export const INITIAL_ROLLS = [
         pl: "gdzie indziej",
         en: "elsewhere",
         phonetic: "ELS-łer",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 859,
-        pl: "e-mail",
-        en: "email",
-        phonetic: "I-mejl",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -6047,13 +5606,6 @@ export const INITIAL_ROLLS = [
         pl: "nagły wypadek",
         en: "emergency",
         phonetic: "i-MER-dżen-si",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 864,
-        pl: "emocja",
-        en: "emotion",
-        phonetic: "i-MOU-szyn",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -6418,13 +5970,6 @@ export const INITIAL_ROLLS = [
         pl: "itp.",
         en: "etc.",
         phonetic: "etsetera",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 917,
-        pl: "euro",
-        en: "euro",
-        phonetic: "jurou",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -7023,13 +6568,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1003,
-        pl: "federalny",
-        en: "federal",
-        phonetic: "FE-də-rəl",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1004,
         pl: "opłata",
         en: "fee",
@@ -7062,13 +6600,6 @@ export const INITIAL_ROLLS = [
         pl: "płot",
         en: "fence",
         phonetic: "FENS",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1009,
-        pl: "festiwal",
-        en: "festival",
-        phonetic: "festawal",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -7163,24 +6694,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1023,
-        pl: "film",
-        en: "film",
-        phonetic: "FILM",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1024,
         pl: "ostateczny",
         en: "final",
         phonetic: "fajnal",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1025,
-        pl: "finanse",
-        en: "finance",
-        phonetic: "fanans",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -7226,13 +6743,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1032,
-        pl: "firma",
-        en: "firm",
-        phonetic: "FERM",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1033,
         pl: "dopasować",
         en: "fit",
@@ -7251,13 +6761,6 @@ export const INITIAL_ROLLS = [
         pl: "naprawiać",
         en: "fix",
         phonetic: "FIKS",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1036,
-        pl: "flaga",
-        en: "flag",
-        phonetic: "FLAG",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -7436,20 +6939,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1062,
-        pl: "forma",
-        en: "form",
-        phonetic: "FORM",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1063,
-        pl: "formalny",
-        en: "formal",
-        phonetic: "FOR-mal",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1064,
         pl: "dawny",
         en: "former",
@@ -7457,24 +6946,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1065,
-        pl: "formuła",
-        en: "formula",
-        phonetic: "FOR-mju-la",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1066,
         pl: "czterdziesty",
         en: "fortieth",
         phonetic: "fortiith",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1067,
-        pl: "fortuna",
-        en: "fortune",
-        phonetic: "forczan",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -7618,13 +7093,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1088,
-        pl: "funkcja",
-        en: "function",
-        phonetic: "fangkszan",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1089,
         pl: "funkcjonować jako",
         en: "function as",
@@ -7636,13 +7104,6 @@ export const INITIAL_ROLLS = [
         pl: "fundusz",
         en: "fund",
         phonetic: "fand",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1091,
-        pl: "fundamentalne",
-        en: "fundamental",
-        phonetic: "fandamental",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -7692,13 +7153,6 @@ export const INITIAL_ROLLS = [
         pl: "zyskać",
         en: "gain",
         phonetic: "GEJN",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1099,
-        pl: "galon",
-        en: "gallon",
-        phonetic: "galan",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -7776,13 +7230,6 @@ export const INITIAL_ROLLS = [
         pl: "sprzęt",
         en: "gear",
         phonetic: "gir",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1111,
-        pl: "generał",
-        en: "general",
-        phonetic: "dżeneral",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -8024,13 +7471,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1146,
-        pl: "globalny",
-        en: "global",
-        phonetic: "GLOU-bl",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1147,
         pl: "rękawiczka",
         en: "glove",
@@ -8207,7 +7647,7 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 1172,
-        pl: "rząd",
+        pl: "rząd (władza)",
         en: "government",
         phonetic: "GA-vern-ment",
         level: ROLL_LEVEL_MAX
@@ -8259,13 +7699,6 @@ export const INITIAL_ROLLS = [
         pl: "ziarno",
         en: "grain",
         phonetic: "GREJN",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1180,
-        pl: "gram",
-        en: "gram",
-        phonetic: "GRAM",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -8325,13 +7758,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1189,
-        pl: "dotacja",
-        en: "grant",
-        phonetic: "grant",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1190,
         pl: "trawa",
         en: "grass",
@@ -8374,13 +7800,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1196,
-        pl: "grupa",
-        en: "group",
-        phonetic: "GRUP",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1197,
         pl: "rosnąć",
         en: "grow",
@@ -8399,13 +7818,6 @@ export const INITIAL_ROLLS = [
         pl: "dorosnąć",
         en: "grow up",
         phonetic: "grou AP",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1200,
-        pl: "gwarancja",
-        en: "guarantee",
-        phonetic: "ga-rən-TI",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -8871,24 +8283,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1267,
-        pl: "historia",
-        en: "history",
-        phonetic: "HI-stə-ri",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1268,
         pl: "uderzyć",
         en: "hit",
         phonetic: "HIT",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1269,
-        pl: "hobby",
-        en: "hobby",
-        phonetic: "HO-bi",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -8976,13 +8374,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1282,
-        pl: "honor",
-        en: "honour",
-        phonetic: "aner",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1283,
         pl: "hak",
         en: "hook",
@@ -9005,23 +8396,9 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 1286,
-        pl: "róg",
+        pl: "róg (instrument dęty)",
         en: "horn",
         phonetic: "horn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1287,
-        pl: "horror",
-        en: "horror",
-        phonetic: "horer",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1288,
-        pl: "szpital",
-        en: "hospital",
-        phonetic: "HOS-pi-tl",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -9029,13 +8406,6 @@ export const INITIAL_ROLLS = [
         pl: "gospodarz",
         en: "host",
         phonetic: "HOUST",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1290,
-        pl: "hotel",
-        en: "hotel",
-        phonetic: "hou-TEL",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -9071,13 +8441,6 @@ export const INITIAL_ROLLS = [
         pl: "humorystyczny",
         en: "humorous",
         phonetic: "hjumeras",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1296,
-        pl: "humor",
-        en: "humour",
-        phonetic: "hjumer",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -9134,13 +8497,6 @@ export const INITIAL_ROLLS = [
         pl: "pomysł",
         en: "idea",
         phonetic: "aj-DI-a",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1305,
-        pl: "idealny",
-        en: "ideal",
-        phonetic: "aj-DI-al",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -9263,13 +8619,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1323,
-        pl: "implikacja",
-        en: "implication",
-        phonetic: "implakejszan",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1324,
         pl: "implikować",
         en: "imply",
@@ -9358,13 +8707,6 @@ export const INITIAL_ROLLS = [
         pl: "cal",
         en: "inch",
         phonetic: "incz",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1337,
-        pl: "incydent",
-        en: "incident",
-        phonetic: "insadant",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -9494,13 +8836,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1356,
-        pl: "infekcja",
-        en: "infection",
-        phonetic: "in-FEK-szyn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1357,
         pl: "zakaźny",
         en: "infectious",
@@ -9526,13 +8861,6 @@ export const INITIAL_ROLLS = [
         pl: "nieformalny",
         en: "informal",
         phonetic: "informal",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1361,
-        pl: "informacja",
-        en: "information",
-        phonetic: "in-for-MEJ-szyn",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -9641,13 +8969,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1377,
-        pl: "instancja",
-        en: "instance",
-        phonetic: "IN-stəns",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1378,
         pl: "zamiast",
         en: "instead",
@@ -9659,34 +8980,6 @@ export const INITIAL_ROLLS = [
         pl: "zamiast",
         en: "instead of",
         phonetic: "insted OW",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1380,
-        pl: "instytut",
-        en: "institute",
-        phonetic: "instatut",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1381,
-        pl: "instytucja",
-        en: "institution",
-        phonetic: "in-sti-TJU-szyn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1382,
-        pl: "instrukcja",
-        en: "instruction",
-        phonetic: "in-STRAK-szyn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1383,
-        pl: "instrument",
-        en: "instrument",
-        phonetic: "IN-stru-ment",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -9704,31 +8997,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1386,
-        pl: "inteligencja",
-        en: "intelligence",
-        phonetic: "in-TE-li-dżəns",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1387,
-        pl: "inteligentny",
-        en: "intelligent",
-        phonetic: "in-TE-li-dżənt",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1388,
         pl: "zamierzać",
         en: "intend",
         phonetic: "intend",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1389,
-        pl: "intencja",
-        en: "intention",
-        phonetic: "in-TEN-szyn",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -9757,20 +9029,6 @@ export const INITIAL_ROLLS = [
         pl: "międzynarodowy",
         en: "international",
         phonetic: "in-ter-NA-szo-nl",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1394,
-        pl: "interpretować",
-        en: "interpret",
-        phonetic: "in-TER-prət",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1395,
-        pl: "interpretacja",
-        en: "interpretation",
-        phonetic: "interpritejszan",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -9848,13 +9106,6 @@ export const INITIAL_ROLLS = [
         pl: "śledztwo",
         en: "investigation",
         phonetic: "in-ve-sti-GEJ-szyn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1407,
-        pl: "inwestycja",
-        en: "investment",
-        phonetic: "inwestmant",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -9939,13 +9190,6 @@ export const INITIAL_ROLLS = [
         pl: "zazdrosny",
         en: "jealous",
         phonetic: "dżelas",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1420,
-        pl: "jeansy",
-        en: "jeans",
-        phonetic: "DŻINS",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -10047,13 +9291,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1435,
-        pl: "junior",
-        en: "junior",
-        phonetic: "DŻUN-jer",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1436,
         pl: "sprawiedliwość",
         en: "justice",
@@ -10149,20 +9386,6 @@ export const INITIAL_ROLLS = [
         pl: "zabijać",
         en: "kill",
         phonetic: "KIL",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1450,
-        pl: "kilogram",
-        en: "kilogram",
-        phonetic: "kilagram",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1451,
-        pl: "kilometr",
-        en: "kilometre",
-        phonetic: "kilomater",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -10264,13 +9487,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1466,
-        pl: "laboratorium",
-        en: "laboratory",
-        phonetic: "lə-BO-rə-to-ri",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1467,
         pl: "praca",
         en: "labour",
@@ -10296,13 +9512,6 @@ export const INITIAL_ROLLS = [
         pl: "jezioro",
         en: "lake",
         phonetic: "LEJK",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1471,
-        pl: "lampa",
-        en: "lamp",
-        phonetic: "LAMP",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -10335,7 +9544,7 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 1476,
-        pl: "ostatni",
+        pl: "ostatni (końcowy)",
         en: "last",
         phonetic: "LAST",
         level: ROLL_LEVEL_MAX
@@ -10349,7 +9558,7 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 1478,
-        pl: "ostatni",
+        pl: "ostatni (ten drugi z wymienionych)",
         en: "latter",
         phonetic: "later",
         level: ROLL_LEVEL_MAX
@@ -10454,7 +9663,7 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 1493,
-        pl: "skóra",
+        pl: "skóra (materiał)",
         en: "leather",
         phonetic: "LE-ther",
         level: ROLL_LEVEL_MAX
@@ -10481,13 +9690,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1497,
-        pl: "legalny",
-        en: "legal",
-        phonetic: "LI-gəl",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1498,
         pl: "cytryna",
         en: "lemon",
@@ -10506,13 +9708,6 @@ export const INITIAL_ROLLS = [
         pl: "długość",
         en: "length",
         phonetic: "LENGTH",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1501,
-        pl: "lekcja",
-        en: "lesson",
-        phonetic: "LE-sən",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -10558,20 +9753,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1508,
-        pl: "licencja",
-        en: "licence",
-        phonetic: "lajsans",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1509,
-        pl: "licencja",
-        en: "license",
-        phonetic: "lajsans",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1510,
         pl: "pokrywka",
         en: "lid",
@@ -10614,13 +9795,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1516,
-        pl: "limit",
-        en: "limit",
-        phonetic: "LI-mit",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1517,
         pl: "ograniczyć się do",
         en: "limit to",
@@ -10646,27 +9820,6 @@ export const INITIAL_ROLLS = [
         pl: "płyn",
         en: "liquid",
         phonetic: "likład",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1521,
-        pl: "lista",
-        en: "list",
-        phonetic: "LIST",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1522,
-        pl: "literatura",
-        en: "literature",
-        phonetic: "literaczer",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1523,
-        pl: "litr",
-        en: "litre",
-        phonetic: "LITRE",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -10733,15 +9886,8 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1533,
-        pl: "lokalizacja",
-        en: "location",
-        phonetic: "lou-KEJ-szyn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1534,
-        pl: "zamek",
+        pl: "zamek (w drzwiach)",
         en: "lock",
         phonetic: "LOK",
         level: ROLL_LEVEL_MAX
@@ -10978,20 +10124,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1568,
-        pl: "magazyn",
-        en: "magazine",
-        phonetic: "ma-ga-ZIN",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1569,
-        pl: "magia",
-        en: "magic",
-        phonetic: "MA-dżik",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1570,
         pl: "poczta",
         en: "mail",
@@ -11010,13 +10142,6 @@ export const INITIAL_ROLLS = [
         pl: "utrzymywać",
         en: "maintain",
         phonetic: "mejn-TEJN",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1573,
-        pl: "major",
-        en: "major",
-        phonetic: "mejdżer",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -11097,13 +10222,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1585,
-        pl: "produkcja",
-        en: "manufacture",
-        phonetic: "manjafakczer",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1586,
         pl: "producent",
         en: "manufacturer",
@@ -11119,7 +10237,7 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 1588,
-        pl: "znak",
+        pl: "znak (oznaczenie)",
         en: "mark",
         phonetic: "MARK",
         level: ROLL_LEVEL_MAX
@@ -11192,13 +10310,6 @@ export const INITIAL_ROLLS = [
         pl: "kolego",
         en: "mate",
         phonetic: "mejt",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1599,
-        pl: "materiał",
-        en: "material",
-        phonetic: "mə-TI-ri-al",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -11335,24 +10446,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1619,
-        pl: "mentalny",
-        en: "mental",
-        phonetic: "MEN-tl",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1620,
         pl: "wspominać",
         en: "mention",
         phonetic: "MEN-szyn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1621,
-        pl: "menu",
-        en: "menu",
-        phonetic: "menju",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -11374,27 +10471,6 @@ export const INITIAL_ROLLS = [
         pl: "wiadomość",
         en: "message",
         phonetic: "ME-sidż",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1625,
-        pl: "metal",
-        en: "metal",
-        phonetic: "ME-tl",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1626,
-        pl: "metoda",
-        en: "method",
-        phonetic: "ME-thəd",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1627,
-        pl: "metr",
-        en: "metre",
-        phonetic: "miter",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -11440,20 +10516,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1634,
-        pl: "miligram",
-        en: "milligram",
-        phonetic: "milagram",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1635,
-        pl: "milimetr",
-        en: "millimetre",
-        phonetic: "milamiter",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1636,
         pl: "umysł",
         en: "mind",
@@ -11461,24 +10523,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1637,
-        pl: "minerał",
-        en: "mineral",
-        phonetic: "mineral",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1638,
         pl: "minimalny",
         en: "minimum",
         phonetic: "MI-ni-məm",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1639,
-        pl: "minister",
-        en: "minister",
-        phonetic: "MI-ni-ster",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -11580,13 +10628,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1654,
-        pl: "model",
-        en: "model",
-        phonetic: "MO-dl",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1655,
         pl: "nowoczesny",
         en: "modern",
@@ -11601,13 +10642,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1657,
-        pl: "moment",
-        en: "moment",
-        phonetic: "MO-ment",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1658,
         pl: "monitorować",
         en: "monitor",
@@ -11619,13 +10653,6 @@ export const INITIAL_ROLLS = [
         pl: "nastrój",
         en: "mood",
         phonetic: "mud",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1660,
-        pl: "moralny",
-        en: "moral",
-        phonetic: "MO-rəl",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -11672,7 +10699,7 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 1667,
-        pl: "góra",
+        pl: "góra (wzniesienie)",
         en: "mountain",
         phonetic: "MAUN-tyn",
         level: ROLL_LEVEL_MAX
@@ -11783,13 +10810,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1683,
-        pl: "muzeum",
-        en: "museum",
-        phonetic: "mju-ZI-em",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1684,
         pl: "muzyka",
         en: "music",
@@ -11857,20 +10877,6 @@ export const INITIAL_ROLLS = [
         pl: "narodowy",
         en: "national",
         phonetic: "NA-szo-nl",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1694,
-        pl: "naturalny",
-        en: "natural",
-        phonetic: "NA-cze-rəl",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1695,
-        pl: "natura",
-        en: "nature",
-        phonetic: "NEJ-czer",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -12028,13 +11034,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1718,
-        pl: "nonsens",
-        en: "nonsense",
-        phonetic: "nansens",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1719,
         pl: "nikt",
         en: "no one",
@@ -12046,13 +11045,6 @@ export const INITIAL_ROLLS = [
         pl: "ani",
         en: "nor",
         phonetic: "nor",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1721,
-        pl: "normalny",
-        en: "normal",
-        phonetic: "NOR-mal",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -12140,13 +11132,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1734,
-        pl: "obserwacja",
-        en: "observation",
-        phonetic: "abzerwejszan",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1735,
         pl: "obserwować",
         en: "observe",
@@ -12210,13 +11195,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1744,
-        pl: "ocean",
-        en: "ocean",
-        phonetic: "OU-szyn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1745,
         pl: "dziwny",
         en: "odd",
@@ -12266,13 +11244,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1752,
-        pl: "oficer",
-        en: "officer",
-        phonetic: "O-fi-ser",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1753,
         pl: "oficjalny",
         en: "official",
@@ -12291,13 +11262,6 @@ export const INITIAL_ROLLS = [
         pl: "staromodny",
         en: "old-fashioned",
         phonetic: "ould faszand",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1756,
-        pl: "raz",
-        en: "once",
-        phonetic: "WANS",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -12336,13 +11300,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1762,
-        pl: "operacja",
-        en: "operation",
-        phonetic: "aperejszan",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1763,
         pl: "opinia",
         en: "opinion",
@@ -12378,20 +11335,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1768,
-        pl: "opozycja",
-        en: "opposition",
-        phonetic: "apaziszan",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1769,
-        pl: "opcja",
-        en: "option",
-        phonetic: "OP-szyn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1770,
         pl: "porządek",
         en: "order",
@@ -12403,20 +11346,6 @@ export const INITIAL_ROLLS = [
         pl: "zwyczajny",
         en: "ordinary",
         phonetic: "ordaneri",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1772,
-        pl: "organy",
-        en: "organ",
-        phonetic: "organ",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1773,
-        pl: "organizacja",
-        en: "organization",
-        phonetic: "organazejszan",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -12560,13 +11489,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1794,
-        pl: "pakiet",
-        en: "packet",
-        phonetic: "pakat",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1795,
         pl: "się spakować",
         en: "pack up",
@@ -12603,7 +11525,7 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 1800,
-        pl: "para",
+        pl: "para (dwoje)",
         en: "pair",
         phonetic: "PER",
         level: ROLL_LEVEL_MAX
@@ -12630,13 +11552,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1804,
-        pl: "panelu",
-        en: "panel",
-        phonetic: "panal",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1805,
         pl: "spodnie",
         en: "pants",
@@ -12658,20 +11573,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1808,
-        pl: "park",
-        en: "park",
-        phonetic: "PARK",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1809,
-        pl: "parlament",
-        en: "parliament",
-        phonetic: "parlamant",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1810,
         pl: "część",
         en: "part",
@@ -12683,13 +11584,6 @@ export const INITIAL_ROLLS = [
         pl: "szczególne",
         en: "particular",
         phonetic: "pertikjaler",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1812,
-        pl: "partner",
-        en: "partner",
-        phonetic: "PART-ner",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -12753,13 +11647,6 @@ export const INITIAL_ROLLS = [
         pl: "zemdleć",
         en: "pass out",
         phonetic: "pas AUT",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1822,
-        pl: "paszport",
-        en: "passport",
-        phonetic: "pasport",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -12890,16 +11777,9 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 1841,
-        pl: "za",
+        pl: "za (za każdą jednostkę)",
         en: "per",
         phonetic: "per",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1842,
-        pl: "procent",
-        en: "per cent",
-        phonetic: "per sent",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -13120,13 +12000,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1874,
-        pl: "pilot",
-        en: "pilot",
-        phonetic: "PAJ-lət",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1875,
         pl: "szpilka",
         en: "pin",
@@ -13176,24 +12049,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1882,
-        pl: "plan",
-        en: "plan",
-        phonetic: "PLAN",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1883,
         pl: "samolot",
         en: "plane",
         phonetic: "plejn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1884,
-        pl: "planeta",
-        en: "planet",
-        phonetic: "PLA-nit",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -13204,24 +12063,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1886,
-        pl: "plastik",
-        en: "plastic",
-        phonetic: "PLAS-tik",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1887,
         pl: "talerz",
         en: "plate",
         phonetic: "PLEJT",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1888,
-        pl: "platforma",
-        en: "platform",
-        phonetic: "platform",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -13288,24 +12133,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1898,
-        pl: "plus",
-        en: "plus",
-        phonetic: "plas",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1899,
         pl: "kieszeń",
         en: "pocket",
         phonetic: "PO-kət",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1900,
-        pl: "poemat",
-        en: "poem",
-        phonetic: "PO-em",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -13348,13 +12179,6 @@ export const INITIAL_ROLLS = [
         pl: "słup",
         en: "pole",
         phonetic: "poul",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1907,
-        pl: "policja",
-        en: "police",
-        phonetic: "palis",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -13428,38 +12252,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1918,
-        pl: "popularny",
-        en: "popular",
-        phonetic: "papjaler",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1919,
-        pl: "populacja",
-        en: "population",
-        phonetic: "papjalejszan",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1920,
-        pl: "portu",
-        en: "port",
-        phonetic: "port",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1921,
         pl: "poza",
         en: "pose",
         phonetic: "pouz",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1922,
-        pl: "pozycja",
-        en: "position",
-        phonetic: "paziszan",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -13631,13 +12427,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1947,
-        pl: "preferencje",
-        en: "preference",
-        phonetic: "preferans",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1948,
         pl: "w ciąży",
         en: "pregnant",
@@ -13677,13 +12466,6 @@ export const INITIAL_ROLLS = [
         pl: "obecny",
         en: "present",
         phonetic: "prezant",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1954,
-        pl: "prezentacja",
-        en: "presentation",
-        phonetic: "prezantejszan",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -13876,31 +12658,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1982,
-        pl: "problemu",
-        en: "problem",
-        phonetic: "prablam",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1983,
-        pl: "procedura",
-        en: "procedure",
-        phonetic: "prasidżer",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1984,
         pl: "kontynuować",
         en: "proceed",
         phonetic: "prasid",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1985,
-        pl: "proces",
-        en: "process",
-        phonetic: "prases",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -13911,45 +12672,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1987,
-        pl: "producent",
-        en: "producer",
-        phonetic: "praduser",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1988,
-        pl: "produkt",
-        en: "product",
-        phonetic: "pradakt",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1989,
-        pl: "produkcja",
-        en: "production",
-        phonetic: "pradakszan",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1990,
         pl: "zawód",
         en: "profession",
         phonetic: "prafeszan",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1991,
-        pl: "profesjonalny",
-        en: "professional",
-        phonetic: "prafeszanal",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1992,
-        pl: "profesor",
-        en: "professor",
-        phonetic: "prafeser",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -13960,31 +12686,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 1994,
-        pl: "programu",
-        en: "program",
-        phonetic: "prougram",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1995,
-        pl: "programu",
-        en: "programme",
-        phonetic: "prougram",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 1996,
         pl: "postęp",
         en: "progress",
         phonetic: "pragres",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 1997,
-        pl: "projekt",
-        en: "project",
-        phonetic: "pradżekt",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -13999,13 +12704,6 @@ export const INITIAL_ROLLS = [
         pl: "promować",
         en: "promote",
         phonetic: "pramout",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2000,
-        pl: "promocja",
-        en: "promotion",
-        phonetic: "pramouszan",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -14048,20 +12746,6 @@ export const INITIAL_ROLLS = [
         pl: "własność",
         en: "property",
         phonetic: "praperti",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2007,
-        pl: "proporcja",
-        en: "proportion",
-        phonetic: "praporszan",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2008,
-        pl: "propozycja",
-        en: "proposal",
-        phonetic: "prapouzal",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -14125,20 +12809,6 @@ export const INITIAL_ROLLS = [
         pl: "pub",
         en: "pub",
         phonetic: "pab",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2018,
-        pl: "publiczny",
-        en: "public",
-        phonetic: "pablik",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2019,
-        pl: "publikacja",
-        en: "publication",
-        phonetic: "pablikejszan",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -14387,13 +13057,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2055,
-        pl: "kwalifikacja",
-        en: "qualification",
-        phonetic: "kłalafakejszan",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2056,
         pl: "wykwalifikowany",
         en: "qualified",
@@ -14461,13 +13124,6 @@ export const INITIAL_ROLLS = [
         pl: "wyścig",
         en: "race",
         phonetic: "rejs",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2066,
-        pl: "radia",
-        en: "radio",
-        phonetic: "rejdiou",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -14559,13 +13215,6 @@ export const INITIAL_ROLLS = [
         pl: "zareagować",
         en: "react",
         phonetic: "riakt",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2080,
-        pl: "reakcja",
-        en: "reaction",
-        phonetic: "riakszan",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -14681,13 +13330,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2097,
-        pl: "recepcja",
-        en: "reception",
-        phonetic: "risepszan",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2098,
         pl: "liczyć",
         en: "reckon",
@@ -14723,13 +13365,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2103,
-        pl: "rekord",
-        en: "record",
-        phonetic: "rakord",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2104,
         pl: "wyzdrowieć",
         en: "recover",
@@ -14741,13 +13376,6 @@ export const INITIAL_ROLLS = [
         pl: "zmniejszyć",
         en: "reduce",
         phonetic: "radus",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2106,
-        pl: "redukcja",
-        en: "reduction",
-        phonetic: "radakszan",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -14779,13 +13407,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2111,
-        pl: "reforma",
-        en: "reform",
-        phonetic: "raform",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2112,
         pl: "lodówka",
         en: "refrigerator",
@@ -14814,20 +13435,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2116,
-        pl: "region",
-        en: "region",
-        phonetic: "ridżan",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2117,
-        pl: "regionalny",
-        en: "regional",
-        phonetic: "ridżanal",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2118,
         pl: "zarejestruj się",
         en: "register",
@@ -14839,20 +13446,6 @@ export const INITIAL_ROLLS = [
         pl: "żałować",
         en: "regret",
         phonetic: "ragret",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2120,
-        pl: "regularne",
-        en: "regular",
-        phonetic: "regjaler",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2121,
-        pl: "regulacja",
-        en: "regulation",
-        phonetic: "regjalejszan",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -14923,13 +13516,6 @@ export const INITIAL_ROLLS = [
         pl: "ulga",
         en: "relief",
         phonetic: "rilif",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2132,
-        pl: "religia",
-        en: "religion",
-        phonetic: "rilidżan",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -15059,13 +13645,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2151,
-        pl: "raport",
-        en: "report",
-        phonetic: "riport",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2152,
         pl: "reprezentować",
         en: "represent",
@@ -15084,13 +13663,6 @@ export const INITIAL_ROLLS = [
         pl: "odtworzyć",
         en: "reproduce",
         phonetic: "ripradus",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2155,
-        pl: "reputacja",
-        en: "reputation",
-        phonetic: "repjatejszan",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -15126,13 +13698,6 @@ export const INITIAL_ROLLS = [
         pl: "badania",
         en: "research",
         phonetic: "risercz",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2161,
-        pl: "rezerwacja",
-        en: "reservation",
-        phonetic: "rezerwejszan",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -15234,13 +13799,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2176,
-        pl: "restauracja",
-        en: "restaurant",
-        phonetic: "resterant",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2177,
         pl: "przywrócić",
         en: "restore",
@@ -15263,7 +13821,7 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 2180,
-        pl: "wynik",
+        pl: "wynik (rezultat)",
         en: "result",
         phonetic: "rizalt",
         level: ROLL_LEVEL_MAX
@@ -15339,24 +13897,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2191,
-        pl: "rewolucja",
-        en: "revolution",
-        phonetic: "rewaluszan",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2192,
         pl: "nagroda",
         en: "reward",
         phonetic: "riłord",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2193,
-        pl: "rytm",
-        en: "rhythm",
-        phonetic: "ridham",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -15549,13 +14093,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2221,
-        pl: "ruina",
-        en: "ruin",
-        phonetic: "ruan",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2222,
         pl: "rządzić",
         en: "rule",
@@ -15724,13 +14261,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2246,
-        pl: "satysfakcja",
-        en: "satisfaction",
-        phonetic: "satasfakszan",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2247,
         pl: "zadowolony",
         en: "satisfied",
@@ -15780,13 +14310,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2254,
-        pl: "scena",
-        en: "scene",
-        phonetic: "sin",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2255,
         pl: "harmonogram",
         en: "schedule",
@@ -15830,7 +14353,7 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 2261,
-        pl: "wynik",
+        pl: "wynik (liczba punktów)",
         en: "score",
         phonetic: "skor",
         level: ROLL_LEVEL_MAX
@@ -15906,31 +14429,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2272,
-        pl: "sekret",
-        en: "secret",
-        phonetic: "sikrat",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2273,
         pl: "sekretarz",
         en: "secretary",
         phonetic: "sekrateri",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2274,
-        pl: "sekcja",
-        en: "section",
-        phonetic: "sekszan",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2275,
-        pl: "sektor",
-        en: "sector",
-        phonetic: "sekter",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -16018,20 +14520,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2288,
-        pl: "senat",
-        en: "senate",
-        phonetic: "senat",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2289,
-        pl: "senator",
-        en: "senator",
-        phonetic: "senater",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2290,
         pl: "wyślij",
         en: "send",
@@ -16060,13 +14548,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2294,
-        pl: "sens",
-        en: "sense",
-        phonetic: "sens",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2295,
         pl: "rozsądny",
         en: "sensible",
@@ -16092,13 +14573,6 @@ export const INITIAL_ROLLS = [
         pl: "oddzielne",
         en: "separate",
         phonetic: "seperejt",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2299,
-        pl: "separacja",
-        en: "separation",
-        phonetic: "seperejszan",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -16229,14 +14703,14 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 2318,
-        pl: "cień",
+        pl: "cień (zacienione miejsce)",
         en: "shade",
         phonetic: "szejd",
         level: ROLL_LEVEL_MAX
     },
     {
         id: 2319,
-        pl: "cień",
+        pl: "cień (sylwetka)",
         en: "shadow",
         phonetic: "szadou",
         level: ROLL_LEVEL_MAX
@@ -16648,13 +15122,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2378,
-        pl: "sytuacja",
-        en: "situation",
-        phonetic: "siczuejszan",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2379,
         pl: "sześćdziesiąty",
         en: "sixtieth",
@@ -16858,13 +15325,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2408,
-        pl: "solidny",
-        en: "solid",
-        phonetic: "salad",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2409,
         pl: "rozwiązanie",
         en: "solution",
@@ -16995,13 +15455,6 @@ export const INITIAL_ROLLS = [
         pl: "specjalne",
         en: "special",
         phonetic: "speszal",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2428,
-        pl: "specjalista",
-        en: "specialist",
-        phonetic: "speszalast",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -17138,24 +15591,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2448,
-        pl: "sport",
-        en: "sport",
-        phonetic: "sport",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2449,
         pl: "miejsce",
         en: "spot",
         phonetic: "spat",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2450,
-        pl: "spray",
-        en: "spray",
-        phonetic: "sprej",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -17226,13 +15665,6 @@ export const INITIAL_ROLLS = [
         pl: "pieczęć",
         en: "stamp",
         phonetic: "stamp",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2461,
-        pl: "standardowe",
-        en: "standard",
-        phonetic: "standerd",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -17307,7 +15739,7 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 2472,
-        pl: "stan",
+        pl: "stan (sytuacja)",
         en: "state",
         phonetic: "stejt",
         level: ROLL_LEVEL_MAX
@@ -17320,13 +15752,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2474,
-        pl: "stacja",
-        en: "station",
-        phonetic: "stejszan",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2475,
         pl: "posąg",
         en: "statue",
@@ -17335,7 +15760,7 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 2476,
-        pl: "stan",
+        pl: "stan (status)",
         en: "status",
         phonetic: "statas",
         level: ROLL_LEVEL_MAX
@@ -17377,7 +15802,7 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 2482,
-        pl: "para",
+        pl: "para (gaz)",
         en: "steam",
         phonetic: "stim",
         level: ROLL_LEVEL_MAX
@@ -17537,13 +15962,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2505,
-        pl: "strategia",
-        en: "strategy",
-        phonetic: "stratadżi",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2506,
         pl: "strumień",
         en: "stream",
@@ -17555,13 +15973,6 @@ export const INITIAL_ROLLS = [
         pl: "siła",
         en: "strength",
         phonetic: "strengkth",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2508,
-        pl: "stres",
-        en: "stress",
-        phonetic: "stres",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -17635,13 +16046,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2519,
-        pl: "studio",
-        en: "studio",
-        phonetic: "studiou",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2520,
         pl: "studiować",
         en: "study",
@@ -17663,24 +16067,10 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2523,
-        pl: "styl",
-        en: "style",
-        phonetic: "stajl",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2524,
-        pl: "temat",
+        pl: "temat (przedmiot rozmowy)",
         en: "subject",
         phonetic: "sabdżekt",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2525,
-        pl: "substancja",
-        en: "substance",
-        phonetic: "sabstans",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -17817,13 +16207,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2545,
-        pl: "supermarket",
-        en: "supermarket",
-        phonetic: "supermarkit",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2546,
         pl: "dostawa",
         en: "supply",
@@ -17943,13 +16326,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2563,
-        pl: "sweter",
-        en: "sweater",
-        phonetic: "słeter",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2564,
         pl: "zamiatać",
         en: "sweep",
@@ -18013,13 +16389,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2573,
-        pl: "symbol",
-        en: "symbol",
-        phonetic: "simbal",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2574,
         pl: "współczujący",
         en: "sympathetic",
@@ -18031,20 +16400,6 @@ export const INITIAL_ROLLS = [
         pl: "współczucie",
         en: "sympathy",
         phonetic: "simpathi",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2576,
-        pl: "systemu",
-        en: "system",
-        phonetic: "sistam",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2577,
-        pl: "tabletka",
-        en: "tablet",
-        phonetic: "tablat",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -18216,13 +16571,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2602,
-        pl: "technologia",
-        en: "technology",
-        phonetic: "teknaladżi",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2603,
         pl: "telewizja",
         en: "television",
@@ -18234,13 +16582,6 @@ export const INITIAL_ROLLS = [
         pl: "opowiedzieć",
         en: "tell off",
         phonetic: "tel OF",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2605,
-        pl: "temperatura",
-        en: "temperature",
-        phonetic: "tempraczer",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -18258,13 +16599,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2608,
-        pl: "tendencja",
-        en: "tendency",
-        phonetic: "tendansi",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2609,
         pl: "napięcie",
         en: "tension",
@@ -18276,13 +16610,6 @@ export const INITIAL_ROLLS = [
         pl: "namiot",
         en: "tent",
         phonetic: "tent",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2611,
-        pl: "termin",
-        en: "term",
-        phonetic: "term",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -18300,13 +16627,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2614,
-        pl: "test",
-        en: "test",
-        phonetic: "test",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2615,
         pl: "tekst",
         en: "text",
@@ -18321,15 +16641,8 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2617,
-        pl: "teatr",
-        en: "theatre",
-        phonetic: "thiater",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2618,
-        pl: "temat",
+        pl: "temat (motyw)",
         en: "theme",
         phonetic: "thim",
         level: ROLL_LEVEL_MAX
@@ -18686,14 +16999,14 @@ export const INITIAL_ROLLS = [
     },
     {
         id: 2669,
-        pl: "góra",
+        pl: "góra (wierzch)",
         en: "top",
         phonetic: "tap",
         level: ROLL_LEVEL_MAX
     },
     {
         id: 2670,
-        pl: "temat",
+        pl: "temat (zagadnienie)",
         en: "topic",
         phonetic: "TO-pik",
         level: ROLL_LEVEL_MAX
@@ -18783,13 +17096,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2683,
-        pl: "tradycja",
-        en: "tradition",
-        phonetic: "trə-DI-szyn",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2684,
         pl: "tradycyjny",
         en: "traditional",
@@ -18839,13 +17145,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2691,
-        pl: "transport",
-        en: "transport",
-        phonetic: "TRANS-port",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2692,
         pl: "transport",
         en: "transportation",
@@ -18885,13 +17184,6 @@ export const INITIAL_ROLLS = [
         pl: "leczenie",
         en: "treatment",
         phonetic: "tritmant",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2698,
-        pl: "trend",
-        en: "trend",
-        phonetic: "TREND",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -19000,13 +17292,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2714,
-        pl: "tunel",
-        en: "tunnel",
-        phonetic: "tanal",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2715,
         pl: "obrócić",
         en: "turn",
@@ -19081,13 +17366,6 @@ export const INITIAL_ROLLS = [
         pl: "się pojawić",
         en: "turn up",
         phonetic: "tern AP",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2726,
-        pl: "dwa razy",
-        en: "twice",
-        phonetic: "tłajs",
         level: ROLL_LEVEL_MAX
     },
     {
@@ -19693,13 +17971,6 @@ export const INITIAL_ROLLS = [
         level: ROLL_LEVEL_MAX
     },
     {
-        id: 2813,
-        pl: "wideo",
-        en: "video",
-        phonetic: "widiou",
-        level: ROLL_LEVEL_MAX
-    },
-    {
         id: 2814,
         pl: "widok",
         en: "view",
@@ -19732,13 +18003,6 @@ export const INITIAL_ROLLS = [
         pl: "wirtualnie",
         en: "virtually",
         phonetic: "werczuali",
-        level: ROLL_LEVEL_MAX
-    },
-    {
-        id: 2819,
-        pl: "wirus",
-        en: "virus",
-        phonetic: "wajras",
         level: ROLL_LEVEL_MAX
     },
     {
