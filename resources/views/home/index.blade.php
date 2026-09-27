@@ -51,7 +51,7 @@
     </main>
 
     <footer class="home-footer">
-        <p>© 2026 Damian Mrugała. Projekt udostępniony na licencji <a href="{{ route('license') }}">MIT</a>.</p>
+        <p>© 2026 Damian Mrugała. Projekt udostępniony na licencji <a href="{{ route('license') }}">MIT. v.0.14.0</a>.</p>
         <a href="mailto:mrugala.damian@gmail.com">mrugala.damian@gmail.com</a>
     </footer>
 @endsection
